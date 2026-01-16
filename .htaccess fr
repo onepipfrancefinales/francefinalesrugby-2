@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+RewriteRule ^ https://francefinalesrugby.fr%{REQUEST_URI} [L,R=301]

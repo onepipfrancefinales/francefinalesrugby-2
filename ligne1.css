@@ -1,0 +1,302 @@
+
+td{text-align:center;}
+
+
+.marginAuto {
+    margin : auto;
+}
+.marginTop {
+    margin-top : 0;
+}
+
+
+
+.celluleNoire{font-family: arial;font-size: 16px;background-color:#000000;font-weight: Bold;}
+.celluleGrise{background-color:#333333;font-size: 16px;font-family: arial;font-weight: Bold;}
+.none a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 19px;  height:28; background-color: #000000;}
+.none2 a{text-decoration: none; color: #ffffff; text-align:center;font-family: arial; font-size: 15px; background-color: #000000; }
+.none3 a{text-decoration: none; color: #333333; text-align:center;font-family: arial; font-size: 19px;  height:28;}
+
+.compet a{text-decoration: none; color: #e50000; text-align:center;font-family: arial; font-size: 18px; }
+
+
+.ligneBlanche{background: #FFFFFF; font-weight:bold;}
+.ligneNoire{background: #000000;}
+.ligneNoireLight{background: #333333;}
+.ligneGrise{background: #CCCCCC; }
+.ligneBleue{background: #0066CC;}
+
+.hauteurColonne{ height: 22px;}
+
+.ligneBlanche650{background: #FFFFFF; width:650 }
+.adresseBas{margin:auto; width : 1250px;background:#ffffff; text-align:center; color:#000000;font-size: 19px; font-weight:bold;}
+
+.colonneGauche{width: 225px;  background:#006699;vertical-align: top; }
+
+
+
+.largueurTab{width:2500px; }
+.tableauBas{border:1; border-color:#006699;  margin:auto;  }
+
+.tableauBas2{border:1;  
+    margin:auto;  width:1250px; }
+  
+
+
+/*
+.tableFed{width:650; border:3px cellspacing=0; border-color :#000000; ali   :center; cellpadding:0}
+*/
+
+td.azeLigue{width: 1px;	height: 1px;}
+
+
+img{border:0;}
+
+/*logo ligue*/
+.colorTexte{
+    color:#000000;
+    font-size: 20px;
+}
+
+
+.justifier {text-justify: auto;}
+
+.alignementCentre{text-align: center;}
+.center{text-align: center;}
+
+.alignementGauche{ text-align: left;}
+.alignLeft{ text-align: left;}
+
+.alignementDroite{ text-align: right;}
+.alignRight{ text-align: right;}
+
+.backgroundFF6666 {background-color: #FF6666;}
+.backgroundRouge{background-color: #FF0000;}
+.backgroundRed{background-color: #FF0000;}
+.backgroundBleu{background-color: #006699; }
+.backgroundBlue{background-color: #006699; }
+.backgroundGray{background-color: #c8caca; }
+.backgroundBlanc{background-color: #FFFFFF;}
+.backgroundWhite{background-color: #FFFFFF;}
+.backgroundNoir{background-color: #000000;}
+.backgroundBlack{background-color: #000000;}
+.backgroundOrange{background-color: #FFCC00;}
+.background666666{background-color: #666666;}
+.backgroundGreen{background-color: #00FF00;}
+.backgroundCCCCCC{background-color: #CCCCCC;}
+.backgroundEAECEB{background-color: #EAECEB;}
+.background3B487F{background-color: #3B487F;}
+.backgroundYellow{background-color: yellow;}
+.background0099FF{background-color: #0099FF;}
+
+.styleTitre{
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 23px;
+    font-style: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.border {border:6px solid black};
+
+.style {font-family: sans-serif;}
+.styleArial {font-family: Arial, Helvetica, sans-serif;}
+.styleCursive {font-family: 'Lucida Handwriting Std', sans-serif;}
+
+/* border */
+.borderDouble {border: thick double;}
+.borderNone {border: none;}
+/*italique*/
+.italic {font-style: italic;}
+
+
+.borderColorBlue {border-color: #006699;}
+.borderColorBlack {border-color: #000000;}
+.borderColor3B487F{border-color: #3B487F;}
+.borderColorWhite {border-color: #FFFFFF;}
+
+
+.borderWidth1 {border: 1px solid;}
+.borderWidth3 {border-width: 3px;}
+
+.colorRed { color: #ff0000; }
+.colorBlack { color: #000000; }
+.colorWhite { color: #FFFFFF; }
+.colorYellow { color: yellow }
+.colorOrange { color: #FFCC00; }
+.colorEAECEB { color: #EAECEB; }
+
+
+
+.size7 {font-size: 33px;}
+.size6 {font-size: 28px;}
+.size5 {font-size: 25px;}
+.size4 {font-size: 20px;}
+.size3 {font-size: 15px;}
+.size2 {font-size: 12px;}
+.size1 {font-size: 10px;}
+/* width px en pourcentage */
+
+.width100PC {width:100%;}
+.width98PC {width:98%;}
+.width95PC {width:95%;}
+.width90PC {width:90%;}
+.width80PC {width:80%;}
+.width75PC {width:75%;}
+.width50PC {width:50%;}
+.width33PC {width:33%;}
+.width20PC {width:20%;}
+.width25PC {width:25%;}
+.width15PC {width:15%;}
+.width10PC {width:10%;}
+.width5PC {width:5%;}
+
+/* width px */
+
+.width1250 {width:1250px;}
+.width1150 {width:1150px}
+.width1100 {width:1100px;}
+.width800 {width:800px;}
+
+.width750 {width:750px;}
+.width550 {width:550px;}
+.width500 {width:500px;}
+.width250 {width:250px;}
+.width225 {width:225px;}
+.width200 {width:200px;}
+.width104 {width:104px;}
+.width150 {width:150px;}
+.width100 {width:100px;}
+.width50 {width:50px;}
+.width75 {width:75px;}
+.width35 {width:35px;}
+.width27 {width:27px;}
+
+
+/* height px */
+.height225 {height:225px;}
+.height100 {height:100px;}
+.height75 {height:75px;}
+.height50 {height:50px;}
+.height25 {height:25px;}
+.height20 {height:20px;}
+
+.verticalAlign {vertical-align: top;}
+
+.borderSpacing { border-spacing: 0;}
+.borderSpacing1 { border-spacing: 1px;}
+
+.padding1 {padding: 1px;}
+
+.paddingBottom25 {padding-bottom: 25px;}
+
+
+.bold {
+    font-weight: bold;
+}
+
+
+
+a.decorationNone{
+    text-decoration:none;
+}
+
+a.decorationNoneWhite{
+    text-decoration:none;
+    color:White;
+}
+
+a.visited{
+    text-decoration:none;
+color:#ffffff ;}
+
+a.decorationNoneRed{
+    text-decoration:none;
+color:red;}
+
+
+.bandeauSup {
+    background-color: #666666;
+    width: 552px;
+    height: 3px;
+    margin: 0;
+    padding: 10px;
+ vertical-align: auto;
+  }
+
+.conteneurGauche {
+    background-color: #CCCCCC;
+    width: 138px;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+  
+  }
+  .conteneurdroit {
+    background-color: #CCCCCC;
+    width: 414px;
+    height: 100px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+  
+  }
+  .debut{
+    justify-content: flex-start;
+}
+
+/*bas*/
+.bas{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}
+.bas a{font-size: 16px;background-color:#000000;font-family: arial;color: #ffffff;font-weight: Bold;}
+
+/*pages territoriaux*/
+.terr{font-size: 16px;color: #000066;font-family: arial;font-weight: Bold;}
+.terr a{text-decoration: none;color: #000066;}
+.terr2{width:600px;background-color:#00CCCC;font-size: 16px;color: #000066;font-family: arial;font-weight: Bold;}
+.terr2 a{color:#000000;font-weight: normal;font-size: 12px;text-decoration: none;color: #000000;}
+.terr3{width:500px;background-color:#006699;font-size: 16px;color: #FFFFFF;font-family: arial;font-weight: Bold;}
+.terr3 a{color:#000000;font-weight: normal;font-size: 14px;text-decoration: none;color: #000000;font-weight: Bold;}
+.terr4{width:500px;background-color:#FF00FF;font-size: 16px;color: #FFFFFF;font-family: arial;font-weight: Bold;}
+.terr4 a{color:#000000;font-weight: normal;font-size: 14px;text-decoration: none;color: #000000;font-weight: Bold;}
+
+
+.colonne {
+    background-color: #006699;
+    width:225px;
+    text-align: center;
+    vertical-align:top;
+     } 
+.centreDePage {
+    background-color: #FFFFFF;
+    width:800px;
+    text-align: center;
+    vertical-align:top;
+     }
+
+     .pourcent {
+        width: 40%;
+        background-color: silver;
+        border: 1px solid red;
+      }
+
+      td.colonneDroiteGauche {
+        background-color: #006699;
+        width: 225px;
+        height: 1222px;
+        vertical-align: top;
+    
+    }
+
+    td.colonneCentrale {
+        background-color: #ffffff;
+        width: 650px;
+        height: 1222px;
+        vertical-align: top;
+        border-color: #000000;
+        padding-top:50px;
+    
+    }
+      
