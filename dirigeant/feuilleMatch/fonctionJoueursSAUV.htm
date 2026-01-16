@@ -1,0 +1,172 @@
+
+
+
+<?php
+$equipe = $_GET['equipe'];
+$comite = $_GET['comite'];
+$bdcomite= "php".''.$comite.''."_joueurs";
+
+if ($comite=="f1" OR $comite=="fed2" OR $comite=="fed3NE" OR $comite=="fed3GS" OR $comite=="pro")
+ {
+ mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_select_db("onepip-france-db3"); 
+ }
+ else
+ {  
+mysql_connect("sql.franceserv.fr", "onepip-france", "lavelan09"); 
+mysql_select_db("onepip-france-db2"); 
+}
+
+//require ("../../$connect.php");
+
+
+$tabJoueurs = array();
+$tabIdPerso = array();
+$tabLicence = array();
+for ($i=1 ; $i< 99; $i++)
+{
+$query ="SELECT nom, prenom, position_terrain, type_licence, id_perso 
+		FROM $bdcomite 
+		WHERE id_perso=$i and club='$equipe' and photo='1'"; 
+				$result = mysql_query($query) ;
+				while ($row = mysql_fetch_array($result) )	
+								{ 
+								$tabJoueur[]= $row[0]; 
+								$tabIdPerso[]= $row[4];
+								$tabLicence[]= $row[2]; 
+								//$nom1 = strtoupper($nom1);
+								//$type_licence1= $donnees['type_licence']; 
+								}
+	
+}
+?>
+
+<?php
+$nom1 = $tabJoueur[0];
+$nom2 = $tabJoueur[1];
+$nom3 = $tabJoueur[2];
+$nom4 = $tabJoueur[3];
+$nom5 = $tabJoueur[4];
+$nom6 = $tabJoueur[5];
+$nom7 = $tabJoueur[6];
+$nom8 = $tabJoueur[7];
+$nom9 = $tabJoueur[8];
+$nom10 = $tabJoueur[9];
+
+$nom11 = $tabJoueur[10];
+$nom12 = $tabJoueur[11];
+$nom13 = $tabJoueur[12];
+$nom14 = $tabJoueur[13];
+$nom15 = $tabJoueur[14];
+$nom16 = $tabJoueur[15];
+$nom17 = $tabJoueur[16];
+$nom18 = $tabJoueur[17];
+$nom19 = $tabJoueur[18];
+$nom20 = $tabJoueur[19];
+
+$nom21 = $tabJoueur[20];
+$nom22 = $tabJoueur[21];
+$nom23 = $tabJoueur[22];
+$nom24 = $tabJoueur[23];
+$nom25 = $tabJoueur[24];
+$nom26 = $tabJoueur[25];
+$nom27 = $tabJoueur[26];
+$nom28 = $tabJoueur[27];
+$nom29 = $tabJoueur[28];
+$nom30 = $tabJoueur[29];
+
+$nom31 = $tabJoueur[30];
+$nom32 = $tabJoueur[31];
+$nom33 = $tabJoueur[32];
+$nom34 = $tabJoueur[33];
+$nom35 = $tabJoueur[34];
+$nom36 = $tabJoueur[35];
+$nom37 = $tabJoueur[36];
+$nom38 = $tabJoueur[37];
+$nom39 = $tabJoueur[38];
+$nom40 = $tabJoueur[39];
+
+$nom41 = $tabJoueur[40];
+$nom42 = $tabJoueur[41];
+$nom43 = $tabJoueur[42];
+$nom44 = $tabJoueur[43];
+$nom45 = $tabJoueur[44];
+$nom46 = $tabJoueur[45];
+$nom47 = $tabJoueur[46];
+$nom48 = $tabJoueur[47];
+$nom49 = $tabJoueur[48];
+$nom50 = $tabJoueur[49];
+
+$nom51 = $tabJoueur[50];
+$nom52 = $tabJoueur[51];
+$nom53 = $tabJoueur[52];
+$nom54 = $tabJoueur[53];
+$nom55 = $tabJoueur[54];
+$nom56 = $tabJoueur[55];
+$nom57 = $tabJoueur[56];
+$nom58 = $tabJoueur[57];
+$nom59 = $tabJoueur[58];
+$nom60 = $tabJoueur[59];
+
+$nom61 = $tabJoueur[60];
+$nom62 = $tabJoueur[61];
+$nom63 = $tabJoueur[62];
+$nom64 = $tabJoueur[63];
+$nom65 = $tabJoueur[64];
+$nom66 = $tabJoueur[65];
+$nom67 = $tabJoueur[66];
+$nom68 = $tabJoueur[67];
+$nom69 = $tabJoueur[68];
+$nom70 = $tabJoueur[69];
+
+$nom71 = $tabJoueur[70];
+$nom72 = $tabJoueur[71];
+$nom73 = $tabJoueur[72];
+$nom74 = $tabJoueur[73];
+$nom75 = $tabJoueur[74];
+$nom76 = $tabJoueur[75];
+$nom77 = $tabJoueur[76];
+$nom78 = $tabJoueur[77];
+$nom79 = $tabJoueur[78];
+$nom80 = $tabJoueur[79];
+
+$nom81 = $tabJoueur[80];
+$nom82 = $tabJoueur[81];
+$nom83 = $tabJoueur[82];
+$nom84 = $tabJoueur[83];
+$nom85 = $tabJoueur[84];
+$nom86 = $tabJoueur[85];
+$nom87 = $tabJoueur[86];
+$nom88 = $tabJoueur[87];
+$nom89 = $tabJoueur[88];
+$nom90 = $tabJoueur[89];
+
+$nom91 = $tabJoueur[90];
+$nom92 = $tabJoueur[91];
+$nom93 = $tabJoueur[92];
+$nom94 = $tabJoueur[93];
+$nom95 = $tabJoueur[94];
+$nom96 = $tabJoueur[95];
+$nom97 = $tabJoueur[96];
+$nom98 = $tabJoueur[97];
+$nom99 = $tabJoueur[98];
+
+
+for ($j=0 ; $j< 4; $j++)
+	{
+	${"nom".($j+1)} = $taJoueur[$j];
+	${"licence".($j+1)} = $tabLicence[$j];
+	}
+
+
+
+
+?>
+
+
+
+
+
+
+
+

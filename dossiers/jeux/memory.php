@@ -1,0 +1,129 @@
+<HTML>
+<HEAD>
+   <TITLE>Petit Jeu de Memory en JavaScript et HTML</TITLE>
+<SCRIPT language="JavaScript"><!--
+var tires=new Array(16);
+var jeu=2;var carte=new Array(2);
+var no_carte=new Array(2);
+var gagne=0,flag_bloc=false;
+var nb_coups=0,fl_gene=true;
+var depart=40; // nombre d'essais
+var imam=new Array(8); //prech. des 8 images de cartes
+for (var i=0;i<8;i++) { imam[i]=new Image();imam[i].src='../../images/blasons200_200/10035'+(i+1)+'.gif'}
+
+function montre()
+{
+ for ( var i=0;i<16;i++)tires[i]=100;
+ charge();
+}
+function ret_2carte(n,m)
+{ 
+  document.images[n].src='../../images/blasons200_200/10001.gif';
+  document.images[m].src='../../images/blasons200_200/10001.gif';
+  flag_bloc=false;
+}
+function clic(n)
+{ 
+  if ((jeu>0)&& (!flag_bloc) && (nb_coups<depart) && (fl_gene)) 
+   { nb_coups+=1;document.fm.zone.value=(depart-nb_coups);
+     if (nb_coups<1) fl_gene=false;
+     document.images[n].src='../../images/blasons200_200/1003'+(tires[n]+1)+'.gif';
+     jeu -=1;
+     carte[jeu]=tires[n];no_carte[jeu]=n;
+     if (jeu==0)
+      { jeu=2; //alert(carte[0]+' '+ no_carte[0]+' ' +carte[1]+' '+no_carte[1]);
+        if (carte[1] != carte[0])
+         { 
+           flag_bloc=true;
+           setTimeout('ret_2carte(no_carte[0],no_carte[1]);',1000);
+         } 
+         else {
+               gagne+=1;
+               if (gagne==8)
+                {alert("Bravo...Vous avez gagné en "+nb_coups+' Clicks !'+
+                       "\nN''oubliez pas de visiter le château d'Oiron pour découvrir d'autres éléments du plafond !");
+               fl_gene=false;
+              }
+         }
+       }
+     }
+}
+function dos()//ttes les cartes sur le dos..
+ {for (var n=0;n<16;n++)
+        document.images[n].src='../../images/blasons200_200/10001.gif';
+ }
+function verif(m) //rôle : vérifier si le nombre m est déja tiré !
+{//test pour ch. du tableau des couples..
+ var c=0;
+ for (i=0;i<16;i++)
+    if (tires[i]==m) c++;
+ if (c==2) return false; else return true;
+}
+
+function charge()//charge le tableau aléatoirement.
+ { for (var i=0;i<16;i++)
+          {tires[i]=100;
+           var flag_ok=false;
+           while (!flag_ok)
+            {  
+             var n=Math.floor(Math.random()*8);
+             if (verif(n)) { 
+                            tires[i]=n;
+                            flag_ok=true;
+                           }
+            }
+          }
+ }
+// -->
+</SCRIPT>
+</HEAD>
+<BODY TEXT="#808080" BGCOLOR="#eeeeee" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000" BACK GROUND="images/fondgc.jpg" onLoad="montre();">
+<!--
+<P><B><I><U><FONT COLOR="#006600">Mini-Jeu 'Memory'</FONT></U></I></B>
+
+&nbsp; : <B><FONT COLOR="#660000">Adapté (très fidélement) d'un exemple du livre : Programmation JavaScript, éditions MicroApplication, 2000</FONT></B>
+-->
+<CENTER>
+<B><FONT FACE="Arial,Helvetica"><FONT COLOR="#006600"><FONT SIZE=-2>Logos de la poule</FONT></FONT></FONT></B><br><br>
+</CENTER>
+
+<CENTER><TABLE BORDER=4 CELLSPACING=0 CELLPADDING=2 WIDTH="500" BGCOLOR="#006880" >
+<TR>
+
+<TD WIDTH="35"><A HREF="javascript:clic(0)"><IMG SRC="../../images/blasons200_200/10001.gif" NAME="base" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD WIDTH="35"><A HREF="javascript:clic(1)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD WIDTH="35"><A HREF="javascript:clic(2)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD WIDTH="35"><A HREF="javascript:clic(3)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+</TR>
+<TR>
+<TD><A HREF="javascript:clic(4)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(5)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(6)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(7)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+</TR>
+<TR>
+<TD><A HREF="javascript:clic(8)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(9)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(10)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(11)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+</TR>
+<TR>
+<TD><A HREF="javascript:clic(12)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(13)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(14)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+<TD><A HREF="javascript:clic(15)"><IMG SRC="../../images/blasons200_200/10001.gif" BORDER=0 HEIGHT=100 WIDTH=100></A></TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=CENTER COLSPAN="4"><FORM name="fm"><B><FONT FACE="Arial,Helvetica"><FONT COLOR="#FFFF00"><FONT SIZE=-2>Il
+vous reste&nbsp;<INPUT type="text" name="zone" size=2 value="40"> Clicks</FONT></FONT></FONT></B>&nbsp;</TD>
+</TR>
+</TABLE>
+</FORM>
+<br>
+
+<br>
+<br>
+</BODY>
+</HTML>

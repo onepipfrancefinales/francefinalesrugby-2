@@ -1,0 +1,120 @@
+/*Formulaire*/
+
+.label
+{
+
+text-align:right;
+font-family: arial;
+font-weight: Bold;
+font-size: 18px;
+color: black;
+}
+
+/*titre*/
+h1
+{ 
+color: black;
+font-size: 32px;
+text-align:center;
+}
+/* sous titre*/
+h2 
+{ 
+color: red;
+font-size: 28px;
+text-align:center;
+}
+h3
+{ 
+color: #000000;
+font-size: 18px;
+text-align:center;
+Font-weight:bold;
+}
+h4
+{ 
+font-family: arial;
+font-weight: Bold;
+font-style: italic;
+font-size: 18px;
+text-align: center;
+background-color:#0099cc;
+border-radius: 10px;
+margin: 5px 5px 5px 5px;
+color: white;
+}
+h4 a 
+{
+color: #ffffff;
+text-decoration: none;
+}
+
+
+a
+{
+text-decoration: none;
+}
+h5
+{ 
+font-family: arial;
+font-weight: Bold;
+font-style: italic;
+font-size: 18px;
+text-align: center;
+background-color:red;
+border-radius: 10px;
+margin: 5px 5px 5px 5px;
+color: black;
+}
+h6
+{
+width: 205px;
+font-family: Arial;
+color: #009900;
+font-size: 16px;
+background: #e9e9e9;
+border-style: solid;
+border-width:2px;
+border-color: #003366;
+margin:1px;
+text-align: center;
+
+}
+h6 a
+{ 
+ color: #009900; 
+ text-decoration: none; 
+font-weight:bold; 
+} 
+
+h8
+{
+
+font-family: Arial;
+color: black;
+font-size: 16px;
+background: red;
+
+
+
+text-align: center;
+
+}
+#AB
+{
+
+font-family: Arial;
+color:red;
+font-size: 16px;
+background: green;
+text-align: center;
+
+}
+
+hr{
+color: red;	
+height: 5px;	
+background-color: red;
+	
+}
+

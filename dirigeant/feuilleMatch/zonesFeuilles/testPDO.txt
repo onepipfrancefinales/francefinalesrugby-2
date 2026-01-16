@@ -1,0 +1,29 @@
+<?php
+$updat = $bdd->prepare('UPDATE membres SET password = :newpassword WHERE email = :email');
+          $updat->execute(array(
+          'password' => md5($newpassword),
+          'email' => $email
+          ));$email = $_POST['email'];
+		  
+$newpassword = rand(100000, 999999);
+      
+          $modif_pass = $bdd->prepare("UPDATE membres SET  password=:newpassword WHERE email =:email");
+              $modif_pass->execute(array(
+              'newpassword' => md5($newpassword),
+        'email' => $email
+              ));
+			  
+			  
+			  
+ $bdfeuilleB = "php".''.$comite.''."_feuilleB";
+	
+	  $req = $bdd->prepare('UPDATE $bdfeuilleB
+							SET N1=:idPerso1
+							WHERE  id=:code_match');
+		   
+	 $req->execute(array(
+						'idPerso1' => $idPerso1
+	
+						));		   			  
+						
+?>

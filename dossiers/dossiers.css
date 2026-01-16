@@ -1,0 +1,50 @@
+p.nom {
+    margin: 30px;
+    font-family: Helvetica;
+    color: #FF0000;
+    font-size: 18px;
+    text-align: left;
+    Font-weight: bold;
+}
+
+.def {
+    font-family: Helvetica;
+    color: #000000;
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.lettreMaj {
+    font-family: Courier New;
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.retrait {
+    margin: 30px;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+td.som {
+    background-color: #003366;
+    border: 3px #9FC6FF solid;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+td.texte {
+    font-family: Helvetica;
+    color: #000000;
+    font-size: 18px;
+}

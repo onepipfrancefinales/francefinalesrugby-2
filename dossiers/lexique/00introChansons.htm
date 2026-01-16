@@ -1,0 +1,45 @@
+<script language="JavaScript">
+  
+  function MM_jumpMenu(targ,selObj,restore){ //v3.0
+    eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+    if (restore) selObj.selectedIndex=0;
+  }
+  //-->
+</script>
+
+<a name="0"></a>
+<p align="center"><br>
+  <font size="7" face="Times New Roman, Times, serif"><i><b>
+        <font color="#FF0000">Chansons
+          paillardes<br>
+          <br>
+        </font>
+      </b></i></font>
+</p>
+<p align="center">
+  <font color="#000000" size="5" face="Arial, Helvetica, sans-serif">Voici
+    un petit florilège de chansons pour agrémenter<br>
+    vos troisièmes mi-temps. </font>
+</p>
+<br />
+<br />
+<?php//require "menuDeroulant.php"; ?>
+<p>
+  <select class="inputG" name="select" onChange="MM_jumpMenu('parent',this,0)" size="20">
+    <option selected>------------</option>
+    <option value="page_chansons.php?chanson=51j">51 je t'aime</option>
+    <option value="page_chansons.php?chanson=bal">Bali Balo</option>
+    <option value="page_chansons.php?chanson=cdl">Chevaliers de la table ronde</option>
+    <option value="page_chansons.php?chanson=fan">Fanchon</option>
+    <option value="page_chansons.php?chanson=ieu">Il est un coin de France</option>
+    <option value="page_chansons.php?chanson=ldd">La digue du cul</option>
+    <option value="page_chansons.php?chanson=lar">Larirette</option>
+    <option value="page_chansons.php?chanson=lsa">La salope</option>
+    <option value="page_chansons.php?chanson=lco">----------</option>
+    <option value="page_chansons.php?chanson=lco">Les copains d'abord</option>
+    <option value="page_chansons.php?chanson=lch">Le chasseur</option>
+    <option value="page_chansons.php?chanson=fdm">Les f&ecirctes de Mauléon</option>
+    <option value="page_chansons.php?chanson=iws">I will survive</option>
+    <option value="page_chansons.php?chanson=lld">Les lacs du Connemara</option>
+  </select>
+</p>
