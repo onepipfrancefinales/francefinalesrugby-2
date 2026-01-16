@@ -1,0 +1,59 @@
+body{
+background-color:#000000;
+}
+
+.lienNoir{
+text-decoration: none;
+color: #000000;
+text-align:center;
+}
+
+.texteGras{
+font-family: arial;
+font-size: 25px;
+text-align:center;
+color: #000000;
+font-weight: Bold;
+text-decoration: underline;
+}
+.texte18{
+font-family: arial;
+font-size: 18px;
+text-align:center;
+color: #000000;
+}
+.texte{
+font-family: arial;
+font-size: 22px;
+text-align:center;
+color: #000000;
+}
+.texte a{
+font-family: arial;
+text-decoration: none;
+color: #000000;
+
+}
+
+.lien a{
+font-style: italic;
+font-size: 19px;
+font-family: arial;
+text-decoration: none;
+color: #000000;
+background-color:#FFFF99;
+}
+
+
+
+h3{
+font-family: arial; 
+font-size: 23px;	
+color: red;
+margin-left:150px;
+text-align:left;
+text-decoration: underline;
+}
+
+p.afficheEquipe{font-family: arial; font-size: 21px; text-align:center; color: blue;}
+p.afficheEquipe a{font-family: arial; text-decoration: none; color: #000000;}

@@ -1,0 +1,209 @@
+
+-----------------PAGE_COMITE------------------------------
+
+page_comite.php : accès aux différents comités territoriaux à partir de la variable_1 (GET, string)
+
+données nécessaires :
+$sigle = $_REQUEST['variable_1'];
+$mode = $_REQUEST['mode'];
+
+ressources :
+require("../saison.php");
+require '../fichierConfig.php';
+require 'fonctions.php';
+require '../fonctions.php';
+require '../connect/connexion1.php';
+
+css :
+<link type="text/css" rel="stylesheet" href="../ligne1.css" />
+<link type="text/css" rel="stylesheet" href="../smart/10.css">
+<link type="text/css" rel="stylesheet" href="lienNoir.css" />
+<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+
+structure de la page :
+
+<?php include("../images/page_image_al.php");?> 
+<?php include("../01ligne.php");?>
+<?php include("../01gauche.php");?>
+<?php include("comite.php");?>
+<?php include("../00droite.php");?>
+<?php include("../resultats/piedDePage.php");?>
+
+
+Problémes à résoudre :
+
+-> affichage des clubs féminins (comite.php)
+-> variables à définir
+-> css à harmoniser
+
+
+------------------PAGE_LIGUE------------------
+
+page_ligue.php : accès aux différentes ligues à partir de la idLigue (GET, numérique)données nécessaires :
+
+données nécessaires :
+
+$idLigue = $_REQUEST['idLigue'];
+$mode = $_REQUEST['mode'];
+
+ressources :
+
+require("../saison.php");
+require '../fichierConfig.php';
+require 'fonctions.php';
+require '../fonctions.php';
+
+require("../connect/connexion1.php");
+
+css :
+
+	<link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+	<link type="text/css" rel="stylesheet" href="../ligne1.css" >
+	<link type="text/css" rel="stylesheet" href="lienNoir.css" >
+	<link type="text/css" rel="stylesheet" href="pglogo.css" >
+
+structure de la page :
+
+
+	<?php include("../images/page_image_al.php"); ?>
+	<?php include("../01ligne.php");  ?>
+	<?php include("../01gauche.php");  ?>
+	<?php //include("ligue.php"); ?>
+	<?php include("ligueTest.php"); ?>
+	<?php include("../00droite.php");  ?>
+	<?php include("../resultats/piedDePage.php"); ?>
+
+
+Problémes à résoudre :
+
+-> choix du fichier ligue.php ou ligueTest.php
+-> variables à définir
+
+------------------PAGE_CLUB_00------------------
+
+pageclub00.php : consultation des fiches clubs à partir de 
+
+	-> la recherche présente dans le fichier 00droite.php
+	-> les liens présents des les page_comite  (logo et intitulé du club), page_ligue (logo et intitulé du club) et resultats/page....(logo du club)
+
+données nécessaires :
+
+ if (isset($_REQUEST['champion'])) $chaine = $_REQUEST['champion'];else $chaine = "2029157";
+//if (isset($_GET['champion'])) $chaine = $_GET['champion']; else $chaine="2029076";
+// remplacementde l'apostrophe
+if (stristr($chaine, "'") == true) {  $chaine2 = str_replace("'", " ", $chaine);  $chaine = $chaine2;  echo "<br>";}
+if (isset($_GET['nouveauClub'])) {  $nouveauClub = $_GET['nouveauClub'];} else {  $nouveauClub = 0;}
+
+ressources :
+
+require "../saison.php";
+require '../fichierConfig.php';
+require "../fonctions.php";
+require "fonctions.php";
+ require '../connect/connexion1.php';
+  require '../connect/connexion1.php';
+
+css :
+
+ <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="pgclub00.css">
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+
+structure de la page :
+
+  <?php include("../images/page_image_al.php"); ?>
+  <?php include("../01ligne.php"); ?></td>
+  <?php include("../01gauche.php"); ?>
+
+          if ($code > 0) {
+     
+            include "clubInfos.php";
+            include "clubPalmares.php";
+            include "clubSaisons.php";
+            //   include("00clubs.php");
+          } else {
+            $photoClub = false;
+            include("02clubs.php");
+          }
+         else {
+          include('modaleRecherche.php');
+        }
+        ?>
+
+        <?php include("../00droite.php"); ?>
+    
+   
+        <?php include("../bas2.php");   ?>
+ 
+
+
+Problémes à résoudre :
+-> variables à définir
+
+
+
+------------------PAGE_RECHERCHE_COMITE2------------------
+
+page_recherche_comite2.php : consultation des fiches clubs après une recherche (fichier 00droite.php) infructueuse
+proposition d'une recherche par ordre alphabétiques, par ligues régionales ou par comités territoriaux
+
+données nécessaires :
+
+$mode = $_REQUEST['mode'];
+if (isset($_REQUEST['variableLettre'])) $chaine = $_REQUEST['variableLettre']; else $chaine ="";
+if (isset($_REQUEST['variable_1'])) $variable_1 = $_REQUEST['variable_1'];else $variable_1="";
+
+ressources :
+
+require("../connect/connexion1.php");
+
+css :
+
+ <link type="text/css" rel="stylesheet" href="../ligne1.css">
+  <link type="text/css" rel="stylesheet" href="../smart/10.css">
+  <link type="text/css" rel="stylesheet" href="../lienNoir.css">
+  <link type="text/css" rel="stylesheet" href="../formulaireDG.css">
+  <link type="text/css" rel="stylesheet" href="resultat.css">
+
+structure de la page :
+
+   <?php include("../images/page_image_al.php");  ?>
+        <?php include("../01ligne.php");  ?>
+        <?php include("../01gauche.php"); ?>
+        <?php include("logoclubs2.php"); ?>
+        <?php include("../00droite.php"); ?>
+    <?php include("../resultats/piedDePage.php");  ?>
+
+Problémes à résoudre :
+
+-> La recherche par comité ne fonctionne pas.
+-> variables à définir
+
+
+------------------NOM_DE_LA_PAGE------------------
+
+page.php : rapide rescriptif
+ressources : imports nécessaires au traitement de la page
+css : fichhiers css utilisés
+structure de la page : fichiers utilisés pour construire la page
+Problémes à résoudre :
+
+
+
+------------------FICHIERS A SUPPRIMER------------------
+
+--> 00pageClub00.php--- ancienne copie du fichier pageClub00.php
+--> logoclubs.php------ inutilisé
+--> page_recherche_comite.php ---- présent dans uniquement dans logoclubs.php
+--> 00clubs.php
+--> pageFicheClubs --- présent dans le dossier smart
+--> ligue.php ----ligue2.php préféré à ligue.php
+
+--> liensNoir.css --- copie du fichier du même nom présent à la racine du site
+--> pglogo.css -- déplacer le contenu du fichier
+
+------------------ TRAVAUX_PARTICULIERS_A_REALISER------------
+
+--> rapatrier le dossier mise_a_jour/infoclub (permet à l'utilisateur de modifier les fiches clubs en ligne )
+
