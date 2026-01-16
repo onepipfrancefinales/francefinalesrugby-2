@@ -1,0 +1,37 @@
+#body {
+ font-family:"trebuchet ms",sans-serif;
+ font-size:90%;
+ }
+#form 2{
+
+ background-color:#FAFAFA;
+ padding:8px;
+ width:300px;
+ }
+ 
+ 
+ 
+fieldset {
+ padding:0 20px 20px 20px;
+ margin-bottom:10px;
+ border:1px solid #DF3F3F;
+ }
+legend {
+ color:#DF3F3F;
+ font-weight:bold
+ }
+#input{
+padding:3px;
+ border:1px solid #F5C5C5;
+ border-radius:5px;
+ width:150px;
+ box-shadow:1px 1px 2px #C0C0C0 inset;
+ background-color:#FFF3F3;
+}
+
+#input[type=submit], input[type=reset] {
+ width:100px;
+ margin-left:5px;
+ box-shadow:1px 1px 1px #D83F3D;
+ cursor:pointer;
+ }

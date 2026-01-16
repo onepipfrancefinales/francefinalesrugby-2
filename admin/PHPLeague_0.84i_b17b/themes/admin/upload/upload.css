@@ -1,0 +1,76 @@
+.Upload
+{
+	margin:0 0 10px;
+}
+
+.Upload span
+{
+	font-size:0.9em;
+	cursor:pointer !important;
+}
+
+.UploadAct
+{
+	float:left;
+	width:45%;
+	max-height:400px;
+	overflow:auto;
+}
+
+.Gallerie
+{
+	float:right;
+	width:45%;
+	height:400px;
+	overflow:auto;
+}
+
+span.loader
+{
+	font-size:0.9em;
+}
+
+.Etat
+{
+	color:#aaa;
+	font-size:0.9em;
+	padding:5px;
+}
+
+ul.files_list
+{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul.files_list li
+{
+	float:left;
+	min-width:100px;
+	min-height:140px;
+	max-width:100px;
+	text-align:center;
+	color:#464646;
+	font-size:0.8em;
+	margin:0 5px 5px 0;
+	padding:2px;
+}
+
+ul.files_list li img
+{
+	max-width:100px;
+	max-height:140px;
+}
+
+.success
+{
+	background-color:#fff;
+	border:1px solid #aaa;
+}
+
+.error
+{
+	background-color:#f0c6c3;
+	border:1px solid #c62;
+}

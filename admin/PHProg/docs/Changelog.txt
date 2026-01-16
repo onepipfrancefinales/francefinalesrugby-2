@@ -1,0 +1,26 @@
+PHProg Changelog
+----------------
+
+26/09/2006 Version 1.2 :
+------------------------
+
+# Compatible PHP 5
+
+
+12/09/2006 Version 1.1 :
+------------------------
+
+# Correction failles de sécurité :
+
+- Full path disclosure
+- Cross Site Scripting ( XSS )
+- Local File Inclusion
+
+Merci à cdg393 : cdg.new.fr
+
+
+------------------------
+------------------------
+
+
+http://www.phprog.com/

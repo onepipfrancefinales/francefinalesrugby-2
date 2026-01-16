@@ -1,0 +1,16 @@
+/*titre*/
+div
+{ 
+color: black;
+font-size: 18px;
+text-align:center;
+}
+
+mark {
+	
+  background-color: yellow;
+  color: black;
+  text-align:center;
+  font-family: Arial;
+  font-size: 28px;
+}

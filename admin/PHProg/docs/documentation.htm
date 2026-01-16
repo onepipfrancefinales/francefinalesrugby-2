@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<title>PHProg : Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css">
+<!--
+body {
+	margin-left:30px;
+	background-color: #7CAEE4;
+}
+img{
+	border:0;
+	margin:10px;
+}
+.ico{
+	margin:0;
+}
+ol{
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #000000;
+	line-height:1.2em;
+}
+ul {
+	list-style: none;
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #000000;
+	line-height:1.2em;
+}
+p {
+	margin:0;
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #000000;
+	line-height:1.2em;
+}
+.icon_w3c{
+	text-align:right;
+}
+.texte-pied {
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #666666;
+}
+a.pied {
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.pied:hover {
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #CC0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.lien {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.lien:hover {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #0000FF;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#pied{
+	text-align:center;
+}
+h1{
+	font-family:Verdana, Arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+h2 {
+	font-family: Verdana, Arial, Times;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+h3 {
+	font-family: Verdana, Arial, Times;
+	font-size: 13px;
+	font-weight: bold;
+	color: #00C;
+	text-decoration: underline;
+	margin-left:10px;
+}
+#haut{
+	height:80px;
+	width:100%;
+}
+#logo{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#titre{
+	position:absolute;
+	top:25px;
+	right:400px;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="haut">
+	<img id="logo" src="../images/logo.gif" height="80" width="300" alt="Logo PHProg" />
+	<h1 id="titre">PHProg v1.0 : Documentation</h1>
+</div>
+	<h2>0. Sommaire :</h2>
+		<ol>
+			<li>Installation
+				<ol>
+					<li>Nouvelle installation</li>
+					<li>Mise à jour depuis la version 1.0</li>
+				</ol>
+			</li>
+			<li>Utilisation</li>
+			<li>Administration</li>
+			<li>Transférez vos albums photos</li>
+			<li>A propos</li>
+		</ol>
+	<h2>1. Installation :</h2>
+		<h3>1.1. Nouvelle installation :</h3>
+			<p>Copiez tous les fichiers contenu dans l'archive sur votre serveur.</p>
+			<p>Allez sur votre site et ouvrez la page "index.php".</p>
+			<p><img src="../images/doc1.jpg" alt="Installation" /></p>
+			<p>Entrez :</p>
+			<ul>
+				<li>un nom d'utilisateur et un mot de passe,</li>
+				<li>le nom de votre site Internet (il apparaîtra en haut de chaque page),</li>
+				<li>le répertoire dans lequel vos photos seront stockées (par défaut /photos/),</li>
+				<li>et la dimenssion des miniatures (par défaut 100 pixels).</li>
+			</ul>
+			<p>Envoyez.</p>
+			<p><img src="../images/doc2.jpg" alt="Installation terminée" /></p>
+			<p>Les fichiers "option.php" et "user.php" ont été créés et les fichiers "install.php" et "install2.php" ont été supprimés.</p>
+			<p>Pour modifier les options vous pouvez soit modifier directement le fichier "option.php" ou réenvoyer les fichiers "install.php" et "install2.php" sur votre serveur, puis vous rendre à la page "http://mon_site/PHProg/?id=2".</p>
+			<p>L'installation est terminée.</p>
+		<h3>1.2. Mise à jour depuis la version 1.0 :</h3>
+			<p>Copiez tous les fichiers contenu dans l'archive sur votre serveur dans le dossier de la version 1.0, sauf le dossier "photos/" et les fichiers "install.php" et "install2.php".</p>
+			<p>Allez sur votre site et ouvrez la page "index.php". Vos albums et options d'installation de la version 1.0 sont inchangés.</p>
+	<h2>2. Utilisation :</h2>
+			<p><img src="../images/doc3.jpg" alt="Liste des albums" /></p>
+			<p>Sur cette page se trouve la liste de tous les albums ainsi que le nombre de photos qu'ils contiennent.</p>
+			<p>En cliquant sur un album vous accédez aux photos qu'il contient.</p>
+			<p><img src="../images/doc4.jpg" alt="Liste des photos" /></p>
+			<p>Le premier affichage de cette page génère les miniatures donc il se peut que la page soit longue à s'afficher.</p>
+			<p>En cliquant sur une miniatures vous accédez à la photo correspondante.</p>
+			<p><img src="../images/doc5.jpg" alt="Affichage d'une photo" /></p>
+			<p>Puis vous pouvez passer à une autre photo en utilisant les boutons "suivante" et "précédente".</p>
+			<p>A tout moment vous pouvez revenir à la liste des albums en cliquant sur "Liste des albums", changer d'album ou revenir aux miniatures en cliquant sur un album dans le menu à gauche.</p>
+	<h2>3. Administration :</h2>
+			<p>Cliquez sur "Se connecter" pour vous connecter en tant qu'administrateur.</p>
+			<p><img src="../images/doc6.jpg" alt="Se connecter" /></p>
+			<p>Entrez votre nom d'utilisateur et votre mot de passe.</p>
+			<p><img src="../images/doc7.jpg" alt="Liste des albums en Administrateur" /></p>
+			<p>Vous êtes maintenant administrateur et vous pouvez :</p>
+			<ul>
+				<li>- Supprimer un album en cliquant sur <img class="ico" src="../images/suppr.gif" alt="Icone supprimer" /></li>
+				<li>- Créer un nouvel album</li>
+				<li><img src="../images/doc8.jpg" alt="Liste des photos en Administrateur" /></li>
+				<li>- Renommer une photo en cliquant sur <img class="ico" src="../images/rename.gif" alt="Icone renommer" /></li>
+				<li>- Redimensionner une photo en cliquant sur <img class="ico" src="../images/resize.gif" alt="Icone redimensionner" /></li>
+				<li>- Faire pivoter une photo de 90 ou 180 degrés en cliquant sur <img class="ico" src="../images/rotate.png" alt="Icone retourner" /></li>
+				<li>- Supprimer une photo en cliquant sur <img class="ico" src="../images/suppr.gif" alt="Icone supprimer" /></li>
+				<li>- Ajouter une photo à l'album.</li>
+			</ul>
+	<h2>4. Transférez vos albums photos :</h2>
+			<p>Un album photos est un répertoire, contenu dans le répertoire que vous avez choisi pendant l'installation (par défaut http://mon_site/PHProg/photos/).</p>
+			<p>Une photo est contenue dans un album.</p>
+			<p>PHProg ne gère pas encore les sous répertoires.</p>
+			<p>Les formats pris en charge sont :</p>
+			<ul>
+				<li>- JPEG</li>
+				<li>- GIF</li>
+				<li>- PNG</li>
+			</ul>
+			<p>Vous pouvez tranférer vos photos soit depuis votre logiciel FTP en transférant vos albums dans le dossier "http://mon_site/PHProg/photos/" soit en vous connectant en tant qu'administrateur sur PHProg.</p>
+	<h2>5. A propos :</h2>
+			<pre>
+###################################################
+#          PHProg : Publication d'albums photos sur Internet
+#          --------------------------------------
+#          Copyright © 2005-2006 LECOINTRE Adrien
+#          --------------------------------------
+#          Site Internet : http://www.phprog.com/
+#          e-mail : <span><img style="margin:0;" src="../images/doc_mail.jpg" alt="e-mail" /></span>
+#          ---------------------------------------------------------------------------
+#          PHProg est un programme libre, vous pouvez le redistribuer
+#          et/ou le modifier selon les termes de la Licence Publique Générale
+#          GNU publiée par la Free Software Foundation version 2.
+#          PHProg est distribué car potentiellement utile, mais
+#          SANS AUCUNE GARANTIE, ni explicite ni implicite, y compris les
+#          garanties de commercialisation ou d'adaptation dans un but spécifique.
+#          Reportez-vous à la Licence Publique Générale GNU version 2 pour plus de
+#          détails.
+#          Licence Publique Générale GNU version 2 disponible sous /docs/licence/
+###################################################
+			</pre>
+			<p>Si vous avez besoin d'aide pour faire fonctionner PHProg, si vous souhaitez traduire PHProg dans une autre langue, si vous souhaitez compléter cette documentation ou si vous avez une suggestion quelconque pour améliorer PHProg alors contactez le webmasteur de PHProg.com soit par <a class="lien" href="http://www.phprog.com/?p=contact">e-mail</a> soit sur le <a class="lien" href="http://www.phprog.com/forum/">forum</a> de <a class="lien" href="http://www.phprog.com">PHProg.com</a>.</p>
+			<p>Dernière modification de cette documentation faite le 12/09/2006.</p>
+			<p class="icon_w3c">
+				<a href="http://jigsaw.w3.org/css-validator/"><img style="border:0;width:88px;height:31px" src="../images/vcss.gif" alt="Valid CSS!" /></a>
+				<a href="http://validator.w3.org/check?uri=referer"><img src="../images/valid-xhtml10.gif" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+			</p>
+<div id="pied">
+	<p class="texte-pied">
+		Copyright © 2005-2006 <a class="pied" href="http://www.phprog.com/">PHProg.com</a> [LECOINTRE Adrien]
+	</p>
+</div>
+
+</body>
+</html>

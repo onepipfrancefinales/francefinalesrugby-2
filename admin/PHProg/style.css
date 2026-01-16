@@ -1,0 +1,124 @@
+.tablo {
+	border: thin solid #006699;
+	height: 100%;
+}
+.tablo-titre {
+	background-color: #006699;
+
+}
+.texte {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #000000;
+}
+.texte-titre {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+
+}
+.texte-pied {
+
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #666666;
+}
+a.pied {
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+a.pied:hover {
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #CC0000;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.lien-titre {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.lien-titre:hover {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #FFCC00;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.lien {
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.lien:hover {
+
+	font-family: Verdana, Arial, Times;
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.texte-photo {
+
+	font-family: Verdana, Arial, Times;
+	font-size: 10px;
+	color: #000000;
+}
+.liste_ligne{
+position:relative;
+height:2.4em;
+font-size:14px;
+font-family: Verdana, Arial, Times;
+}
+.liste_checkbox{
+margin-top:1ex;
+}
+.liste_img{
+position:absolute;
+left:1.5em;
+border:0;
+height:2.3em;
+}
+.liste_name{
+position:absolute;
+left:5em;
+margin-top:1ex;
+}
+.liste_reso{
+position:absolute;
+right:12em;
+width:8em;
+margin-top:1ex;
+}
+.liste_size{
+position:absolute;
+right:6em;
+width:6em;
+margin-top:1ex;
+}
+.liste_action{
+position:absolute;
+right:0;
+width:6em;
+margin-top:1ex;
+}
+.liste_logo{
+height:1.2em;
+}
+img{
+border:0;
+}
+#diapo{
+margin:0;
+text-align:center;
+}

@@ -1,0 +1,58 @@
+
+
+
+
+.marginAuto {
+    margin : auto;
+}
+
+
+
+
+/*logo ligue*/
+.colorTexte{
+    color:#000000;
+    font-size: 20px;
+}
+.alignementCentre{
+    text-align: center;
+}
+.alignementGauche{
+    text-align: left;
+}
+.alignementDroite{
+    text-align: right;
+}
+.backgroundRouge{
+    background-color: #FF0000;
+}
+.backgroundBleu{
+    background-color: #006699;
+}
+.backgroundBlanc{
+    background-color: #FFFFFF;
+}
+.backgroundNoir{
+    background-color: #000000;
+}
+
+
+
+.style {font-family: sans-serif;}
+
+.colorRed { color: #ff0000; }
+.colorBlack { color: #000000; }
+.colorWhite { color: #FFFFFF; }
+
+.size5 {font-size: 25px;}
+.size4 {font-size: 18px;}
+.size3 {font-size: 15px;}
+
+.width1250 {width:1250px;}
+
+.center {text-align: center;}
+
+
+
+
+

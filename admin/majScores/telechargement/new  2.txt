@@ -1,0 +1,103 @@
+{ ============================================================================ }
+{ Restructuration de la table TabRefSEPA.
+  Table1 prend la structure de la version 2019-01.                          }
+{ ============================================================================ }
+procedure TMenuGene.MajTabRefSEPA_2019_01(Sender: TObject);
+var ouvertFerme : boolean;               // savoir si la table REFSEPA est ouverte ou fermée
+    indChamp : integer;                  // pour se déplacer sur les champrs de la table
+    MaxChamp : integer;                  // nombre de champs de la table version 2016
+begin
+   with Table1 do
+   begin
+       DataBaseName := 'DFT_DB';
+       TableType := ttDefault;
+       TableName := 'Referentiel_SEPA2019.dbf';
+       FieldDefs.Clear;
+       FieldDefs.Add('Code',ftString,2,false);
+       FieldDefs.Add('Libelle',ftString,30,false);
+       FieldDefs.Add('FormatIban',ftInteger,0,false);
+       FieldDefs.Add('HORS_EEE',ftString,3,false);
+       IndexDefs.Clear;
+       IndexDefs.Add('FORMAT','FormatIban',[]);
+       IndexDefs.Add('LIBELLE','Libelle',[]);
+       IndexDefs.Add('CODE','Code',[]);
+       CreateTable;
+       Open;
+   end;
+
+   ouvertFerme := Mdb.TabRefSEPA.active;
+
+   if not ouvertFerme then Mdb.TabRefSEPA.Open;
+   MaxChamp := Mdb.TabRefSEPA.FieldDefs.Count;
+
+   While not Mdb.TabRefSEPA.Eof do          // recopier le fichier en version 2016 dans celui en version 2019
+   begin
+      Table1.Append;      // permettre l'écriture de l'enregistrement dans Table1
+      for indChamp := 0 to MaxChamp-1 do
+      begin
+         Table1.Fields[indChamp] := Mdb.TabRefSEPA.Fields[indChamp];
+      end;
+      Table1.Post;         // valide la recopie dans Table1
+      Mdb.TabRefSEPA.Next;               // enregistrement suivant du fichier 2016-01
+   end;
+   Mdb.TabRefSEPA.close;                 // ferme le fichier en version 2016-01
+
+   // ajout ou modifications de nouvelles lignes dans le fichier 2019-01
+   Table1.IndexName := 'CODE';    // sélectionne l'index sur le code pays
+
+   // modif de la ligne conf helvetique
+   Table1.SetKey;     // passer en mode recherche
+   Table1.FieldByName('Code').AsString := 'CH';
+   if Table1.GotoKey       // si on trouve la suisse
+   then begin
+      Table1.Edit;       // passer en mode modification
+      Table1.FieldByName('HORS_EEE').AsString := 'x';
+      Table1.Post;       // valider la modification
+   end;
+
+   //suppression de la ligne Gibraltar
+   Table1.SetKey;     // passer en mode recherche
+   Table1.FieldByName('Code').AsString := 'GI';
+   if Table1.GotoKey       // si on trouve Gibraltar
+   then begin
+      Table1.Delete;      // marque à supprimer cet enregistrement
+   end;
+
+   Table1.Append;
+   Table1.FieldByName('Code').AsString := 'BL';
+   Table1.FieldByName('Libelle').AsString := 'Saint Barthélemy';
+   Table1.FieldByName('FormatIban').AsInteger := 27;
+   Table1.FieldByName('HORS_EEE').AsString := '';
+   Table1.Post;
+
+   Table1.Append;
+   Table1.FieldByName('Code').AsString := 'MF';
+   Table1.FieldByName('Libelle').AsString := 'Saint Martin';
+   Table1.FieldByName('FormatIban').AsInteger := 27;
+   Table1.FieldByName('HORS_EEE').AsString := '';
+   Table1.Post;
+
+   Table1.Append;
+   Table1.FieldByName('Code').AsString := 'SM';
+   Table1.FieldByName('Libelle').AsString := 'Saint Marin';
+   Table1.FieldByName('FormatIban').AsInteger := 27;
+   Table1.FieldByName('HORS_EEE').AsString := 'x';
+   Table1.Post;
+
+   // suppression définitive de Gibraltar
+   Table1.Close;
+   Table1.Exclusive := true;
+   Table1.Open;
+   DbiPackTable(Table1.DBHandle,Table1.Handle,nil,nil,true); { suppression physique }
+   Table1.Close;
+   Table1.Exclusive := false;
+
+   // suppression du fichier version 2016-01 et renomme le fichier 2019-01
+   DeleteFile(URepertoireAlias + '\Referentiel_SEPA.dbf');
+   DeleteFile(URepertoireAlias + '\Referentiel_SEPA.mdx');
+   //
+   RenameFile(URepertoireAlias + '\Referentiel_SEPA2019.dbf',URepertoireAlias + '\Referentiel_SEPA.dbf');
+   RenameFile(URepertoireAlias + '\Referentiel_SEPA2019.mdx',URepertoireAlias + '\Referentiel_SEPA.mdx');
+   //
+   if ouvertFerme then Mdb.TabRefSEPA.Open;
+end;

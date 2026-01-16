@@ -1,0 +1,21 @@
+Nouvel executable de DVP
+
+Bonjour,
+Ci joint le nouvel exécutable de DVP.
+
+
+Bonjour,
+La dernière mise à jour de DVP connait des difficultés à l'installation.
+Un nouvel exécutable a été mis au point pour corriger les difficultés rencontrées à l'installation.
+Ci joint ce nouvel exécutable de DVP.
+
+
+Procédure d'installation :
+-1- Par mesure de précaution faire un copier coller du répertoire DFT (Que l'on trouve dans C:DFT OU chemin de votre serveur\DFT)
+-2- L'installation doit être effectuée avec les droits administrateur. Lancer l'exécutable reçu.
+-3- Se reconnecter en utilisateur et lancer l'application.
+
+Cordialement
+Support National 31
+
+nouvel exécutable  2019-11 envoyé
