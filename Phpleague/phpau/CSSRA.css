@@ -1,0 +1,20 @@
+
+TR.trPhpmpy3 {background-color: #3b487f ; color: #FFFF00; font-size: 12px;; font-family: Arial, Helvetica, sans-serif} /* titre dans les tableaux */
+
+TR.date {color:#99cc00; background-color: #000000;Font-weight: bold;} /* date des rencontres*/
+
+
+/* --------- Général --------- */
+
+BODY.Phpmpy { color: #000000;  font-size:20pt; font-family: arial;}
+td {font-size:12pt; font-family: arial;}
+text {font-size:12pt; font-family: arial;}
+.popper { POSITION: center; VISIBILITY: hidden }
+table {font-size:12pt; font-family: arial;}
+
+
+/* --------- tableau classement --------- */
+
+TABLE.tablePhpmpy2 {border-style: solid; border-color:#000000; border-width: 10;} /* bordure tableau */
+TR.ligne1 {background-color: #E5E5E5} /* première ligne grise du classement */
+TR.ligne2 {background-color: #FFFFFF} /* seconde ligne blanche du classement */

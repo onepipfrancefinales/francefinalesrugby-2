@@ -1,0 +1,48 @@
+=====================================================================================
+
+Nom     : PHPLeague
+Version : 0.84i-b17
+
+Date    : 21/11/2010
+Heure   : 18h30
+
+=====================================================================================
+
+Installation
+
+=====================================================================================
+
+1 - Il est impératif de faire une sauvegarde de votre base de données, car la version
+    que vous allez tester est une version bêta et par conséquent contient encore des
+    erreurs de développement.
+
+2 - Dézippez l'archive PHPLeague_0.84i_b17.zip
+
+3 - Supprimez l'ancien répertoire de PHPLeague_0.84i_bx (si vous avez d'autres
+    version bêta)
+
+4 - Uploadez le répertoire PHPLeague_0.84i_b17 dézippé sur votre serveur FTP
+
+5 - Copiez le fichier "data_connect.php" de votre configuration actuelle de PHPLeague
+    et collez le dans le répertoire racine de la version bêta de PHPLeague
+
+6 - Testez avec votre navigateur Internet la partie Consultation, Administration et
+    Pronostics
+
+=====================================================================================
+
+
+Il y aura des bugs à corriger en fonction de certaines configurations, donc je vous
+demande d'être le plus précis possible dans vos retours.
+
+Si possible :
+ - Version PHP
+ - Version MySQL
+ - Capture(s) d'écran
+
+Impératif   :
+ - Version précédante de PHPLeague
+
+
+Mail : contact@multiastuces.com
+Web  : http://www.multiastuces.com

@@ -1,0 +1,79 @@
+
+<?php
+  
+   echo "<h2>"."championnats ".$gr_champ_nom."<br>"."Pays de la Loire"."</h2>"; 
+      include("pronos.inc.htm");
+      ?>
+
+
+<table width="90%" align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table cellSpacing="0" cellPadding="0" width="100%" align="center" class="prono" border="0">
+        <tr>
+          <td>
+            <table width="90%" align="center" class="prono">
+              <tr>
+                <td colspan="6">
+              <tr>
+                <td colspan="6" class="jaune center bold">
+                  <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
+                </td>
+              </tr>
+              <tr>
+                <td colspan=6>&nbsp; </td>
+              </tr>
+              <tr>
+                <td colspan="6" class="blanc center bold">
+                  <?php pseudo_admin ($gr_champ, $idconnect);  //echo " ".PRONO_ACCUEIL_PRESENTATION; ?>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="6">&nbsp; </td>
+              </tr>
+              <tr>
+                <td width="13%" class="blanc center">
+                  <?php echo ADMIN_COHERENCE_MSG2; ?>
+                </td>
+                <td width="13%" class="blanc center">
+                  <?php echo DATE; ?>
+                </td>
+                <td width="16%"></td>
+                <td width="16%" class="blanc center">
+                  <?php echo PRONO_GRILLE_PRONO; ?>
+                </td>
+                <td width="16%"></td>
+                <td width="26%" class="blanc center">
+                  <?php echo PRONO_GRILLE_TEMPS; ?>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <?php grille_admin ($gr_champ, $idconnect) ?>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%">
+      <table cellSpacing="0" cellPadding="0" width="100%" align="left" border="0">
+        <tr>
+          <td align="center" width="32%">&nbsp; </td>
+          <td width="36%" class="prono1 center bold jaune" height="160">
+                <?php echo PRONO_CLASSEMENT_GENERAL; ?><br />
+              <br>
+              <?php classement_general ($gr_champ, $user_pseudo, $idconnect); ?>
+            </div>
+          </td>
+          <td align="center" width="32%">&nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

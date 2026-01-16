@@ -1,0 +1,166 @@
+<table border="1" cellpadding="0" cellspacing="0" width="100%" >
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tr>
+          <td width="15" class="alignLeft"><img src="affiche_trait_jaune.gif" width="22" height="9" alt=""></td>
+           <td height="15" class="menu1 bold alignLeft">
+                <?php echo PRONO_MENU_MON_COMPTE; ?>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="20" class="pseudo center bold alignLeft">
+          <?php echo PRONO_MENU_BIENVENUE." $user_pseudo";?>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 bold alignLeft">
+      &nbsp;<?php echo PRONO_MENU_POINTS; ?>
+        :&nbsp;<?php affiche_points ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>">
+          <?php echo PRONO_MENU_MON_PROFIL; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="logout.php?selection=deconnexion&mode=<?php echo $mode;?>">
+          <?php echo PRONO_MENU_DECONNEXION; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?page=inscription&gr_champ=<?php echo $gr_champ;?>&mode=<?php echo $mode;?> ">
+          <?php echo PRONO_MENU_INSCRIPTION; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15">
+    </td>
+  </tr>
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tbody>
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" alt="" width="22" height="9">
+            </td>
+            <td height="15" class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_MES_CLASSEMENTS; ?>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;
+        <?php echo PRONO_MENU_GENERAL; ?>
+        :&nbsp;
+        <?php affiche_clmnt_general ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="13" class="menu2 alignLeft">
+      &nbsp;
+        <?php echo PRONO_MENU_MOIS; ?>
+
+        :&nbsp;<?php affiche_clmnt_mensuel_en_cours ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="13">
+    </td>
+  </tr>
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tbody>
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" alt="" width="22" height="9"></td>
+            <td class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_MES_PRONOS; ?>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=<?php echo $gr_champ;?>">
+          <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>">
+          <?php echo PRONO_MENU_DERNIERE_GRILLE; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>">
+          <?php echo PRONO_MENU_MES_RESULTATS; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+          <?php echo PRONO_MENU_BAREME; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">
+          <?php echo PRONO_MENU_AIDE; ?>
+        </a>
+    </td>
+  </tr>
+ <tr>
+    <td height="13">
+    </td>
+  </tr>
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" width="22" alt="" height="9"></td>
+              <td height="15" class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
+            </td>
+          </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft size3">
+              <br>
+             <!-- Phpleague/phppro/prono/index.php-->
+              
+        
+             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>">Top 14 - Pro D2
+              </a>
+             <br>
+            <?php   champ_prono ($gr_champ, $idconnect, $mode); ?>
+            <br>
+    </td>
+  </tr>
+</table>

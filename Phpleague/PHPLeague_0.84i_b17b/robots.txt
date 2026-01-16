@@ -1,0 +1,9 @@
+User-agent:*
+Disallow: /admin/
+Disallow: /bases/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /install/
+Disallow: /lang/
+Disallow: /scripts/
+Disallow: /themes/

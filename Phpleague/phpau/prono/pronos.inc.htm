@@ -1,0 +1,39 @@
+<hr>
+<table class="borderNone" width="100%">
+    <tr>
+        <td colspan="6" class="center bold">
+        </td>
+    </tr>
+    <tr>
+        <!-- lien inscription a déplacer 
+<td class="center bold">
+    <a class="size1 styleVerdana" href="index.php?page=inscription&gr_champ=<?php echo $gr_champ; ?> "><?php echo PRONO_INC_INSCRIPTION; ?></a></td>
+<td class="center">|</td>
+-->
+
+        <td class="center bold">
+            <a class="size2 styleVerdana"
+                href="index.php?champLigue=<?php echo $champLigue;?>&mode=<?php echo $mode; ?>&page=classement&type=hebdo&gr_champ=<?php echo $gr_champ; ?> ">
+                <?php //echo PRONO_INC_HEBDO; ?>DERNIER WEEK END
+            </a>
+        </td>
+        <!--
+        <td class="center">|</td>
+        <td class="center bold">
+            <a class="size2 styleVerdana"
+                href="index.php?mode=<?php echo $mode; ?>&page=classement&type=mensuel_en_cours&gr_champ=<?php echo $gr_champ; ?> ">
+                <?php echo PRONO_INC_MOIS; ?>
+            </a>
+        </td>
+    -->
+        <td class="center">|</td>
+        <td class="center bold">
+            <a class="size2 styleVerdana"
+                href="index.php?champLigue=<?php echo $champLigue;?>&mode=<?php echo $mode; ?>&page=classement&type=general&gr_champ=<?php echo $gr_champ; ?>">
+                <?php echo PRONO_INC_GENERAL; ?>
+            </a>
+        </td>
+    </tr>
+</table>
+<br />
+<br />

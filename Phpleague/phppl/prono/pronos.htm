@@ -1,0 +1,47 @@
+<table width="100%">
+    <tr>
+        <td width="50%" class="bleu bold alignLeft"><a class="colorYellow"
+                href="<?php echo $prec; ?>&mode=<?php echo $mode; ?>">
+                <span style="color:Yellow">  << <?php echo PRONO_GRILLE_PRECEDENT; ?></span>
+            </a>
+        </td>
+        <td width="50%" class="bleu bold alignRight">
+            <a class="colorYellow"
+                href="index.php?mode=<?php echo $mode; ?>&page=pronos&debut=<?php print $fin; ?>&gr_champ=<?php print $gr_champ;?>">
+                <span style="color:Yellow">  <?php echo PRONO_GRILLE_SUIVANT; ?> >></span>
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td width="100%" colspan="2" class="prono1">
+            <FORM id="matchid" name="matchid" action="index.php?page=pronos&gr_champ=<?php echo $gr_champ;?>"
+                method="post">
+
+                <table width="98%">
+                    <tr>
+                        <td width="9%" class="blanc center">
+                            <?php echo ADMIN_COHERENCE_MSG2; ?>
+                        </td>
+                        <td width="6%" class="blanc">
+                            <?php echo DATE; ?>
+                        </td>
+                        <td width="32%"></td>
+                        <td class="blanc center">
+                            <?php echo PRONO_GRILLE_PRONO; ?>
+                        </td>
+                        <td width="32%"></td>
+                        <td width="11%" class="blanc center">
+                            <?php echo PRONO_GRILLE_TEMPS; ?>
+                        </td>
+                        <td width="7%" class="blanc center">
+                            Division
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <hr style="  border: 0;
+    height: 1px;
+    background: #f4f3f3;">
+                        </td>
+                    </tr>

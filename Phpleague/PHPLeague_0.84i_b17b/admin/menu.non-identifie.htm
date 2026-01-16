@@ -1,0 +1,25 @@
+<div id="Authentif">
+<?php
+
+if (empty($ERR))
+{
+	echo InfoReqSql('InfLogin', 0, 'highlight', 'info', 'Authentification');
+}
+else
+{
+	echo InfoReqSql('InfLogin', 0, 'error', 'alert', $ERR);
+	
+}
+
+?>
+
+	<form method="post" action="login.php">
+		<label for="pseudo">Identifiant</label>
+		<input type="text" name="pseudo" id="pseudo" class="text ui-widget-content ui-corner-all" />
+		<label for="pass">Mot de passe</label>
+		<input type="password" name="pass" id="pass" class="text ui-widget-content ui-corner-all" />
+		<br />
+		<input type="hidden" name="autoidentification" value="1" />
+		<input type="submit" value="Valider" />
+	</form>
+</div>

@@ -1,0 +1,31 @@
+
+/* centrage alignement */
+
+.alignGauche {text-align: start}
+.alignDroite {text-align: end}
+.centre {text-align: center}
+
+
+
+
+.colorBlack {color:black}
+.colorWhite {color:#ffffff}
+
+
+.width100PC {width:100%}
+.width90PC {width:90%}
+
+
+.height200 {height:200}
+.height25 {height:25}
+
+
+
+.width1250 {width:1250px}
+.width200 {width:200px}
+.width25 {width:25px}
+
+
+.marginAuto { margin : auto}
+
+.borderWidth1 {border-width: 1px}

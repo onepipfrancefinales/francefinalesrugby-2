@@ -1,0 +1,176 @@
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Verdana, Arial, sans-serif;
+		font-size: 100%;
+		}
+	
+	#Header {
+		padding: 20px;
+		background: #333;
+		border-bottom: 1px solid #fff;
+		}
+	
+	#Header h1 {
+		padding: 0;
+		margin: 0;
+		color: #ccc;
+		font-family: Georgia, serif;
+		font-weight: normal;
+		font-size: 1.6em;
+		}
+	
+	#nav {
+		float: left;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-color: #ccc;
+		border-bottom: 1px solid #999;
+		}
+	
+	#nav li { 
+		float: left;
+		margin: 0;
+		padding: 0;
+		}
+	
+	#nav span {
+		float: left;
+		display: block;
+		padding: 6px 30px 6px 5px;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 0.9em;
+		color: #666;
+		background: #ccc url(sep.gif) no-repeat top right;
+		}
+	
+#nav span.NavSel {
+	color: #000;
+}
+
+#Content {
+	clear: left;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 600px;
+}
+
+img
+{
+	border:none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+
+table
+{
+	border-collapse:collapse;
+	font-size:100%;
+	background-color:#fff;
+	margin:0 0 15px;
+	padding:0;
+}
+
+thead tr th,tfoot tr td
+{
+	padding:4px;
+}
+
+tfoot tr td
+{
+	font-size:0.9em;
+}
+
+tbody tr td
+{
+	font-size:0.8em;
+	padding:4px;
+}
+
+.FloatLeft {
+	float: left;
+}
+
+.FloatRight {
+	float: right;
+}
+
+.TxtRight
+{
+	text-align:right;
+}
+
+.TxtLeft
+{
+	text-align:left;
+}
+
+.TxtCenter
+{
+	text-align:center;
+}
+
+.Large10P
+{
+	width:10%;
+}
+
+.Large30P
+{
+	width:30%;
+}
+
+.Large40P
+{
+	width:40%;
+}
+
+.Large60P
+{
+	width:60%;
+}
+
+.Large80P
+{
+	width:80%;
+}
+
+.Large98P
+{
+	width:98%;
+}
+
+.Large100P
+{
+	width:100%;
+}
+
+.aide {
+	margin: 0;
+	padding: 0;
+	font-size: 0.7em;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+	font-size:0.9em;
+}
+
+.ui-dialog .ui-dialog-content,.ui-tabs .ui-tabs-nav li, .back a
+{
+	font-size:0.8em;
+}
+
+.ui-widget-footer {
+	border:1px solid #aaa;
+	background:#ccc url(../admin/themes/phpleague/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+	color:#222;
+	font-weight:700;
+}

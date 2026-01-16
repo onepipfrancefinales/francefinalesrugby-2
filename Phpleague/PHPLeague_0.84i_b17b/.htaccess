@@ -1,0 +1,14 @@
+<Files config.php>
+Order Allow,Deny
+Deny from All
+</Files>
+
+<Files data_connect.php>
+Order Allow,Deny
+Deny from All
+</Files>
+
+<Files .htaccess>
+Order Allow,Deny
+Deny from All
+</Files>
