@@ -1,0 +1,235 @@
+
+<?php
+//var_dump($champLigue);echo "<br>";
+//echo "champLigue (menu.identifie) : ".$champLigue;
+//echo strlen($champLigue);echo "<br>";
+if (strlen($champLigue) > 2 ) $champLigue = substr($champLigue,0,2);
+//echo "  ---  ";
+//echo "champLigue traité : ".$champLigue;echo "<br>";
+
+if (is_numeric($gr_champ))
+$gr_champ = $gr_champ;
+
+
+?>
+<table border="1" cellpadding="0" cellspacing="0" width="100%" >
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tr>
+          <td width="15" class="alignLeft"><img src="affiche_trait_jaune.gif" width="22" height="9" alt=""></td>
+           <td height="15" class="menu1 bold alignLeft">
+                <?php echo PRONO_MENU_MON_COMPTE; ?>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="20" class="pseudo center bold alignLeft">
+          <?php echo PRONO_MENU_BIENVENUE." ".$user_pseudo;?>
+    </td>
+  </tr>
+  
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=profil&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_MON_PROFIL; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="logout.php?selection=deconnexion&mode=<?php echo $mode;?>&champLigue=<?php echo $champLigue;?>">
+          <?php echo PRONO_MENU_DECONNEXION; ?>
+        </a>
+    </td>
+  </tr>
+  
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?page=inscription&gr_champ=<?php echo $gr_champ;?>&mode=<?php echo $mode;?>&champLigue=<?php echo $champLigue; ?> ">
+         CREATION D'UN NOUVEAU COMPTE (Formulaire en bas de page)
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;  <a href="https://francefinalesprono.forumactif.com" target="_blank">ACCES AU FORUM (Pour échanger sur tous sujets)</a>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15">
+    </td>
+  </tr>
+ 
+    <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" width="22" alt="" height="9"></td>
+              <td height="15" class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_LES_CHAMPIONNATS; ?>
+            </td>
+          </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft size3">
+       <br>      
+      <span class="colorRed bold alignLeft size4">  &nbsp; Sélectionner un championnat</span>
+      <br>
+ <span class="italic size3">&nbsp;  (Vous pouvez participer à  un ou plusieurs championnats)</span>
+      
+      <br>  
+             <!-- Phpleague/phppro/prono/index.php-->
+              
+        <!--
+             &nbsp;<a href="../../phppro/prono/index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=11">Top 14 - Pro D2
+              </a>
+            -->
+             <br>
+            <?php 
+                 champ_prono ( $champLigue, $gr_champ, $idconnect, $mode); ?>
+            <br>
+            Autres propositions possibles sur simple demande.
+    </td>
+  </tr>
+  <tr>
+    <td height="13">
+    </td>
+  </tr>
+   <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tbody>
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" alt="" width="22" height="9">
+            </td>
+            <td height="15" class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_MES_CLASSEMENTS; ?><span class="size2 italic"> (Séletionner un championnat au préalable)</span> 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;
+        <?php echo PRONO_MENU_GENERAL; ?>
+        :&nbsp;
+        <?php affiche_clmnt_general ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="13" class="menu2 alignLeft">
+      &nbsp;
+        <?php //echo PRONO_MENU_MOIS;?>WEEK END 
+
+        :&nbsp;<?php affiche_clmnt_mensuel_hebdo ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 bold alignLeft">
+      &nbsp;<?php echo PRONO_MENU_POINTS; ?>
+        :&nbsp;<?php affiche_points ($user_id, $gr_champ, $idconnect);?>
+    </td>
+  </tr>
+  <tr>
+    <td height="13">
+    </td>
+  </tr>
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tbody>
+          <tr>
+            <td width="15" class="alignLeft">
+              <img src="affiche_trait_jaune.gif" alt="" width="22" height="9"></td>
+            <td class="menu1 bold alignLeft">
+                  <?php echo PRONO_MENU_MES_PRONOS; ?><span class="size2 italic"> (Séletionner un championnat au préalable)</span> 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=pronos&gr_champ=<?php echo $gr_champ;?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_PROCHAINE_GRILLE; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=derniers_pronos&gr_champ=<?php echo $gr_champ;?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_DERNIERE_GRILLE; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=mes_resultats&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_MES_RESULTATS; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_BAREME; ?>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td height="15" class="menu2 alignLeft">
+      &nbsp;<a href="index.php?mode=<?php echo $mode;?>&page=baremes&gr_champ=<?php echo $gr_champ; ?>&champLigue=<?php echo $champLigue; ?>">
+          <?php echo PRONO_MENU_AIDE; ?>
+        </a>
+    </td>
+  </tr>
+ 
+
+</table>
+<br>
+<?php
+echo "<p class=\"size5 bold styleArial\">";
+
+if ($page == "baremes") $titre = "Barèmes" ;
+elseif  ($page =="profil") $titre = "Gestion du compte";
+elseif  ($page =="aide") $titre = "Aide";
+elseif  ($page =="inscription") $titre = "Création d'un nouveau compte";
+else  $titre = nom_championnat( $gr_champ, $idconnect);
+
+echo $titre; echo "<br>";
+
+/********************************************/
+
+if ($page == "pronos" OR $page == "derniers_pronos" OR $page == "mes_resultats" OR $page == "classement" ) {
+
+include("pronos.inc.htm");
+
+if ($page == "pronos"){$sousTitre = "Grille en cours" ;}
+elseif  ($page == "derniers_pronos") {$sousTitre = "Dernières grilles" ;}
+elseif ($page == "mes_resultats"){$sousTitre = "Mes résultats" ;}
+elseif ($page == "classement")
+  {
+    if ($type == "hebdo") $sousTitre = "classement hebdomadaire";
+    elseif ($type == "mensuel_en_cours") $sousTitre = "Classement mensuel";
+    elseif ($type == "general") $sousTitre = "Classement général";
+  }
+ 
+}
+echo "</p>";
+echo "<span class=\"size4\">"; echo $sousTitre; echo "</span>";
+
+?>
+
+<br>
+<br>

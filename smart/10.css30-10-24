@@ -1,0 +1,107 @@
+/*
+
+.body{
+	background-color:#CCCCCC;
+}
+.table{
+	width :100%;
+	text-align: center;
+}
+.p{
+	
+	text-align: center;
+}
+*/
+.palm{color: #FF0000;font-size: 19px;font-family: arial;text-align: center;font-weight: bold;}
+
+.palmNoir{color: #000000;font-size: 18px;font-family: Helvetica;text-align: center;}
+
+p.equipeChamp{font-size: 26px; font-family: arial; text-align: center; font-weight: bold;}
+
+td.titre-haut{color: #FFFFFF;font-size: 25px;font-family: arial;text-align: center;font-weight: bold;background-color: #006699}
+
+
+div.titre3{
+height:25px;border-style:double;border-style:2px solid #405864;color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FFFFFF}
+
+
+td.titre2{
+color: #FFFFFF;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #0033FF}
+
+
+td.titrePlus{
+color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FFFFFF;border: 1px solid; border-color: #000000}
+
+td.champion{
+color: #000000;font-size: 25px;font-family: arial;text-align: center;font-weight: bold; background-color: #FF0000}
+
+td.france{margin-bottom:0px; margin-top:0px; height:10px;background: linear-gradient(to left, red, white); border:2px solid #405864;border-radius:8px 8px 8px 8px;font-family: arial;color: #FFFFFF;font-size: 16px;
+text-align: center;font-weight: Bold; width:95%}
+
+td.france a{text-decoration: none; color:#FFFFFF;}
+
+td.franceBleu{margin-top:0px;background:linear-gradient(to right, blue, white); border:2px solid #405864;border-radius:8px 8px 8px 8px;font-family: arial;color: #FFFFFF;font-size: 16px;
+text-align: center;font-weight: Bold; width:95%}
+
+td.franceBleu a{text-decoration: none; color:#FFFFFF;}
+
+
+td.coin {background-color: #0066CC;border: 3px #9FC6FF solid;text-align: center;font-size: 18px;font-family: arial;
+color: #FFFFFF;font-weight: bold;text-decoration: none;border-radius:10px 10px 10px 10px;}
+
+.ffr{color: #FFFFFF;font-size: 25px;font-family: arial;text-align: center;font-weight: bold;background-color: #006699}
+
+p{text-align: center;}
+
+a{text-decoration: none; }
+
+/*titre France Finales Rugby*/
+.h22{  background-color:#006699;color:white;font-size:24px;text-align:center;font-family:Arial;Font-weight:bold;}
+
+.h12{ background-color:#FFFFFF;color:black;font-size:24px;text-align:center;font-family:Arial;Font-weight:bold;
+border-color:black;border: 1px solid;}
+
+div.calendrier {width:90%; font-size:20px;background-color: #FFFF00;color: red;font-family: arial;Font-weight:bold;text-align:center;}
+
+td.coin_fed {background-color: #003366;border: 3px #9FC6FF solid;text-align: center;font-size: 18px;font-family: arial;
+color: #FFFFFF; font-weight: bold;text-decoration: none;border-radius:10px 10px 10px 10px; width="50%";}
+
+td.coin_fed a{text-decoration: none; color:#FFFFFF;}
+
+#aa{background-color:#003366;color: white;font-size: 12px;text-align:center;font-family: Arial;Font-weight:bold;}
+
+h1{text-align: center;font-weight: Bold;font-family: arial;color: #ffffff;font-size: 12px;}
+
+
+hr {height:5px;background-color:#003366}
+
+.taille8{font-size:14px; text-align: center;color: #000000;font-family: arial;}
+.taille8B{font-size:14px; text-align: center;color: #000000;font-weight: Bold;font-family: arial;}
+
+.taille10{font-size:24px; text-align: center;color: #000000;font-family: arial;}
+.taille10B{font-size:24px;text-align: center;color: #000000;font-weight: Bold;font-family: arial;}
+
+
+/* ------- bilan -------*/
+
+tr.ligneA{background-color:#0099FF;}
+tr.ligneB{background-color:#FFFFFF;}
+
+td.lignePalm{width:86%;text-align: center;color: #000000;font-family: verdana;font-size: 12px;}
+
+td.saisons{width:14%;text-align: center;color: #000000;font-family: verdana;font-size: 10px;font-weight: Bold;vertical-align:top;}
+
+td.texteBgVert{background-color:#109618; font-size: 17px; color: #000000; font-weight: bold; font-family: arial; text-align: center;}
+td.texteBgRouge{background-color:#DC3912; font-size: 17px; color: #000000; font-weight: bold; font-family: arial; text-align: center;}
+
+
+table.sommaireFed3{width:80%;}
+td.tab3{font-family: arial;font-weight: Bold;font-size: 13px;text-align: center;border-radius:10px 10px 10px 10px;
+border: 1px black solid ;background-color:#FF9933;}
+td.tab3 a{text-decoration: none;color: #000000;}
+
+
+
+.bulleReglement{ color: #ffffff; font-family: Arial;font-size: 16px;text-align: center; border:2px solid #405864;Font-weight: bold;border-color:#000000;
+background: linear-gradient(to right, yellow, white);border-radius: 10px;margin: 5px 5px 5px 5px;}
+.bulleReglement a{color: #000000;text-decoration: none;}

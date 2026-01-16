@@ -1,0 +1,39 @@
+<table class="marginAuto borderNone prono" cellspacing="0" width="95%">
+  <tr>
+    <td class="center blanc bold"><br>
+          <?php classement_type ($type);?>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table class="marginAuto borderNone" width="95%">
+        <tr>
+          <td class="blanc bold">
+            <?php echo CONSULT_CLASSEMENT; ?>
+          </td>
+          <td class="blanc bold">
+            <?php echo PRONO_CLASSEMENT_PSEUDO; ?>
+          </td>
+          <td class="blanc bold">
+            <?php echo PRONO_CLASSEMENT_POINTS; ?>
+          </td>
+          <td class="blanc bold">
+            <?php echo PRONO_CLASSEMENT_PARTICIPATIONS; ?>
+          </td>
+          <td class="blanc bold">
+            <?php echo "Totaux"; ?>
+          </td>
+           <td class="blanc bold">
+            <?php echo "Clubs"; ?>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6" >
+            <hr color="blue">
+          </td>
+        </tr>
+        <?php classement ($gr_champ, $type, $user_pseudo, $idconnect);  ?>
+      </table>
+    </td>
+  </tr>
+</table>

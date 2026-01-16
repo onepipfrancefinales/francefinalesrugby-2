@@ -1,0 +1,37 @@
+h1
+{ 
+color: #000000;
+font-size: 30px;
+text-align:center;
+Font-weight:bold;
+font-family: Arial;
+
+}
+
+.tab3{
+font-family: Arial;
+background-color:red;
+border:1px solid #405864;
+border-radius:8px 8px 8px 8px; 
+color: red;
+text-align: center;
+;
+}
+
+
+
+
+.tab4{
+
+background-color:orange;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+text-align: center;
+
+}
+
+.pub{
+background-color:black;
+text-align: center;
+
+}

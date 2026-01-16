@@ -1,0 +1,160 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Titre       : PhpLeague v0.82                                                               //
+// Auteur      : Alexis MANGIN                                                                 //
+// Email       : PhpLeague@Univert.Org                                                         //
+// Url         : http://phpleague.univert.org ou http://www.univert.org                        //
+// Démo        : http://phpleague.univert.org                                                  //
+// Description : Script php de gestion de championnats et de pronostics                        //
+// Version     : 0.82 (25/07/2005)                                                            //
+//                                                                                             //
+//                                                                                             //
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+PhpLeague est un logiciel en développement. Le logiciel est gratuit pour les sites amateurs. Pour les sites officiels
+et les sites à but lucratif il est impératif de me contacter (PhpLeague@Univert.Org) avant toute utilisation !
+
+Ce script contient des améliorations de PhpLeague : fiches clubs,
+présentation des classements, statistiques, miniclassement et sécurité.
+Restez informé des nouvelles versions de PHPLeague en vous inscrivant à notre
+mailing list : http://phpleague.univert.org
+PhpLeague est un logiciel gratuit en développement. Afin de m'aider à le dévelloper
+ce serait sympa de mettre un lien vers mon site http://phpleague.univert.org ! Merci !
+
+Installation
+------------
+
+    
+
+Exécuter le fichier install.php
+         -> Mise à jour de la version 0.81
+
+             1) Sauvegarder les fichiers et la base de donnée de l'ancienne version, en cas de disfonctionnement
+                vous pourrez la rétablir.
+             2) Exécuter install.php
+
+         -> Mise à jour de la version 0.71
+
+             1) Sauvegarder les fichiers et la base de donnée de l'ancienne version, en cas de disfonctionnement 
+                vous pourrez la rétablir.
+             2) Exécuter install.php
+
+         -> Installation normale :  Exécuter install.php
+
+Fiches clubs
+------------
+
+Admin :          classe          => création des classes
+                 rens            => création des renseignements
+                 gestequipes     => valeur des renseignements
+                 verif_clubs     => vérification de toutes les fiches clubs
+Consultation :   consult/club.php          => consultation des fiches clubs
+
+- D'abord il faut définir les classes c'est à dire les grandes
+  parties dans lesquelles vous allez entrer les renseignements.
+  (Exemple : Club, Effectif, Palmarès)
+
+- Ensuite entrez les renseignements. Là vous allez détaillez les classes.
+  (Par exemple dans club si vous voulez mettre le staff il vous faut créer
+  les renseignements : président, entraineur... et les insérer dans la classe club)
+
+- La dernière étape consiste à entrer la valeur du renseignement (Gestion des clubs).
+  Pour cela il faut sélectionner le club et entrer la valeur des renseignement.
+  
+- Si vous ne souhaitez pas utiliser les fiches clubs, éditez "config.php"
+ (remplacer le "1" par "0") ligne 23.
+
+
+Classement
+----------
+
+Couleur : consult/classement.php
+Barres  : consult/classement_barre
+
+- Deux présentations pour les classements vous sont offertes : un avec les codes couleurs
+  l'autre avec des barres noires séparant les équipes promues et les relégables.
+  Nota : vous pouvez encadrer le premier non promus en supprimant les "//" dans le
+  fichier consult/fonctions.php aux lignes 747 et 862 (je pense au classementde Ligue1...)
+
+
+Mini-classement
+---------------
+
+Admin : consult/miniclass.php
+
+- Editeur du code vous permettant d'afficher le mini-classement selon vos préférences ;-)
+
+
+Buteurs
+-------
+
+- Sélectionner le buteur, pour le supprimer : cliquer sur le buteur.
+- Pour la consulation, un classement équipe par équipe est maintenant disponible.
+
+
+Calendrier
+----------
+
+Consultation : consult/calendrier.php
+
+
+Mise à jour d'une version autre que 0.71
+----------------------------------------
+
+- Pour mettre à jour sans perdre vos données existantes :
+  Sauvegardez avec phpmyadmin vos tables (seulement les données, pas la structure),
+  puis chargez le fichier phpleague.sql dans votre base (cela recréera vos tables avec la 
+  bonne structure), enfin, rechargez vos données.
+  NB : si vous rencontrez des problèmes avec la table 'clmnt' vous pouvez la supprimer.
+
+- Il est fortement possible que vous rencontriez des erreurs car la structure a beaucoup changé
+
+
+Statistiques
+------------
+
+Admin : admin/graph.php                  => création des graphiques
+Consultation : consult/graphiques.php    => consultation des les graphiques d'un championnat
+
+- Il faut générer les graphiques après chaque nouvelle entrée de résultats. Pour cela allez 
+  dans "création de graphiques". L'exécution de ce script est assez long. Si vous rencontrez
+  des problèmes à ce niveau modifiez le max_execution_time dans C:\windows\php.ini
+
+
+A venir...
+----------
+
+-> Administration des membres
+
+Historique
+----------
+
+25/07/2005 v0.82  : - Corrections de quelques disfonctionnements
+
+20/06/2005 v0.82b : - Optimisation de l'affichage des classements
+                    - Fiches joueurs
+                    - Fiches matchs
+                    - Adaptation des grilles de pronos pour Mozilla/Firefox
+                    - Optimisations diverses
+
+19/09/2004 v0.81 : - Corrections de bugs
+
+
+16/07/2004 v0.80 : - Refonte totale de l'administration
+                   - Pronostics
+                   - Corrections de divers bugs
+                   - version sortie rapidement, risques de bug en attendant v0.81 ;-)
+
+
+29/03/2003 v0.71 : - Correction d'un bug au niveau du mini-classement
+                   - Evolution des classements
+
+02/03/2003 v0.70 : - Fiches clubs
+                   - Mini-classement
+                   - Buteurs
+                   - Présentations des classements
+                   - calendrier journée par journée (division2.php)
+                   
+********************************************************************************
+Si vous avez des questions ou des suggestions rendez-vous sur le forum : http://phpleague.univert.org
+Bonne continuation !

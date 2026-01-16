@@ -1,0 +1,160 @@
+<?php
+
+if (isset($_GET['page'])) $page = $_GET['page'];
+if (isset($_GET['mode'])) $mode = $_GET['mode'];
+//if (isset($_GET['champLigue'])) $champLigue = $_GET['champLigue'];
+//echo "*******************";echo "<br>";
+//echo "champLigue (menu.non-identifie) : ".$champLigue; echo "<br>";
+?>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tr>
+          <td width="15"><img border="0" src="affiche_trait_jaune.gif" width="22" height="9" alt=""></td>
+          <td height="15" class="menu1 bold alignLeft">
+            <?php echo PRONO_MENU_MON_COMPTE; ?>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td height="20">
+      <form action="login.php?champLigue=<?php echo $champLigue;?>&mode=<?php echo $mode;?>" method="POST">
+        <table cellSpacing=0 width="100%" border=0>
+          <tr>
+            <td class="menu2 bold">&nbsp;
+              <?php echo PRONO_MENU_LOGIN; ?>  <?php echo PRONO_MENU_LOGIN; ?>
+            </td>
+            <td class="menu2"><input class="log" size="10" name="user">
+            </td>
+          </tr>
+          <tr>
+            <td class="menu2 bold">&nbsp;
+              <?php echo PRONO_MENU_MDP; ?>
+            </td>
+            <td class="menu2"><INPUT class="log" size="10" type="password" name="pass">
+            </td>
+            <td><input type="hidden" name="testMode" value="<?php echo $mode; ?>"></td>
+            <td><input type="hidden" name="autoidentification" value="1"><input type="submit" value="Ok"></td>
+
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" class="menu2">&nbsp;<a href="?page=perdu_mdp&mode=<?php echo $mode;?>&champLigue=<?php echo $champLigue;?>">
+        <?php echo PRONO_MENU_OUBLIE; ?>
+      </a>
+    </td>
+  </tr>
+</table>
+<br><br>
+
+<?php if ($page == "erreur_login" or $page =="perdu_mdp") {
+  
+
+}
+else
+{
+?>
+<script type="text/javascript">
+  function VerifForm() {
+    var pseudo = document.inscription.pseudo.value;
+    var mail = document.inscription.mail.value;
+    var mdp = document.inscription.mdp.value;
+    var mdp2 = document.inscription.mdp2.value;
+
+  }
+</script>
+<table border="1" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="23" class="prono1">
+      <table class="prono" width="100%">
+        <tr>
+          <td width="15"><img border="0" src="affiche_trait_jaune.gif" width="22" height="9" alt=""></td>
+          <td height="15" class="menu1 bold alignLeft">
+            INSCRIPTION  (test)
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <table width="90%" class="prono marginAuto borderWidth1">
+        <tr>
+          <td>
+
+            <form action="?page=inscription&champ= <?php echo $champ;?>&champLigue=<?php echo $champLigue;?> " method="POST" target="_self"
+              name="inscription" onsubmit="javascript:return VerifForm()">
+              <table class="marginAuto">
+
+                <tr>
+                  <td colspan="2" class="center"></td>
+                </tr>
+                <tr>
+                  <td width="50%" class="blanc alignRight">
+                    <?php echo PRONO_CLASSEMENT_PSEUDO; ?> :
+                  </td>
+                  <td><input type="text" name="pseudo" maxlength="20"></td>
+                </tr>
+
+
+                <tr>
+                  <td width="50%" class="blanc alignRight">
+                    <?php echo PRONO_PROFIL_MAIL; ?> :
+                  </td>
+                  <td><input type="text" name="mail" maxlength="40"></td>
+                </tr>
+
+
+                <tr>
+                  <td width="50%" class="blanc alignRight">
+                    <?php echo SETUP_PASSWORD; ?> :
+                  </td>
+                  <td><input type="password" name="mdp" maxlength="20" size="20"></td>
+                </tr>
+
+
+                <tr>
+                  <td width="50%" class="blanc alignRight">
+                    <?php echo PRONO_INSCRIPTION_MDP; ?> :
+                  </td>
+                  <td><input type="password" name="mdp2" maxlength="20"></td>
+                </tr>
+
+                <tr>
+                  <td width="50%" class="alignRight"><br></td>
+                  <td></td>
+                </tr>
+                
+                <tr>
+                  <td width="50%" class="blanc alignRight">
+                    <?php echo PRONO_INSCRIPTION_MDP2; ?> :
+                  </td>
+                  <td><input type="text" name="nom" maxlength="20"></td>
+                </tr>
+                
+                <tr>
+                  <td width="50%" class="alignRight"><br></td>
+                  <td></td>
+                </tr>
+
+
+                <tr>
+                  <td colspan="2" class="center"><input type="hidden" name="go" value="1"><br><INPUT TYPE="submit"
+                      VALUE="<?php echo ENVOI; ?>"></td>
+                </tr>
+              </table>
+            </form>
+      </table>
+  </tr>
+</table>
+
+<?php
+}
+?>
