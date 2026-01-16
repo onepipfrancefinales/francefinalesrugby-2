@@ -1,0 +1,1037 @@
+table{
+width:100%;	
+}
+
+
+header{
+	
+width:100%;		
+	
+}
+
+footer{
+
+background:	#006699;	
+width:100%;		
+text-align: center;	
+}
+
+.coin5{
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+}
+
+
+nav{
+padding-top:0px;
+width:100%;		
+}
+
+.lien>a{
+
+text-decoration: none;
+color: red;
+font-size: 35px;	
+width: 100%;
+text-align: center;
+font-weight: Bold;	
+
+}
+.lien{	
+color:#EAECEB;	
+text-align: center;	
+}
+
+
+.titreBandeau{
+background:	#006699;
+margin-top:2px;
+text-align: center;
+font-weight: Bold;
+color: #FFcc00;
+font-size: 25px;	
+}
+
+
+
+
+
+ a
+{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+body{
+background-color:#EAECEB;
+}
+
+hr{
+margin-left:5px;
+}
+
+
+/* mise en forme des page 
+	quarts demi AR
+	barrage 8me
+
+
+*/
+.bandeau1{
+background:	#006699;
+border-radius: 8px 8px 8px 8px;
+border: 3px solid #000000;
+height: 35px;
+
+text-align: center;
+font-weight: Bold;
+color: #FFcc00;
+font-size: 25px;
+
+
+}
+
+h2{
+margin-top: 2px;
+background:	#FFCC66;	
+width: auto;
+text-align: center;
+font-weight: Bold;
+font-size: 25px;
+border-radius: 8px 8px 8px 8px;
+border: 2px solid #000000;	
+}
+
+
+
+.bandeau2{
+
+background:	#FFCC66;
+border-radius: 8px 8px 8px 8px;
+border: 2px solid #000000;
+height: auto;
+text-align: center;
+font-weight: Bold;
+font-size: 25px;
+}
+
+.affichageTitre{
+/*text-align: center;
+Font-Weight: bold;
+font-family: Arial;	
+border-radius:8px 8px 8px 8px;	
+*/	
+
+
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+width:150px;
+	
+}
+
+
+
+.affichageEquipe{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width:200px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+
+}
+
+
+
+
+.affichageBarrage{ 
+background-color:#693D4C;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+
+width:180px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+}
+
+.scoreBarrage{
+
+background-color:#693D4C;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #FFFFFF;
+font-size: 16px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+
+.affichageGA{
+
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.affichagePts{
+
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #FFCC00;
+font-size: 16px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+ 
+.equipeI{
+
+background-color:#0091D7;
+border-radius:8px 8px 8px 8px;
+border:2px solid #405864;
+ 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+.equipeItitre{
+
+background-color:#0091D7;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #000000;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+
+
+.vide{
+
+background-color:#006699;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+
+}
+
+.equipeII{
+background-color:#04ADFF;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+.equipeIItitre{
+background-color:#04ADFF;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #000000;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+
+.entete{
+background-color:black;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+}
+
+
+.france{
+background-color:red;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+} 
+ 
+
+ 
+/* demi finale */ 
+
+#palmares2{
+color: #FFFFFF;
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:5px 5px 5px 5px;
+margin-left:650px;
+width: 200px;
+background-color:#FFFF00;
+font-family: arial; 
+color: black;
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+} 
+ 
+/*description finale */ 
+ 
+ #palmares{
+color: #FFFFFF;
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:5px 5px 5px 5px;
+margin-left:650px;
+width: 200px;
+background-color:#FFFF00;
+font-family: arial; 
+color: black;
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+} 
+ 
+ .division{
+color: #FFFFFF;
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:25px 8px 25px 8px;
+margin-left:40px;
+width: 200px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+background-color:#040BB3;
+border:2px solid #405864;
+}
+
+
+
+.finale1{
+float:left;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-left:300px;
+margin-top:-33px;
+width: 240px;
+
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.score1{
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+
+margin:-33px 0 0 2px;
+margin-left:547px;
+width: 35px;
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+
+}
+
+
+.finale2{
+	
+clear: both;
+position: absolute;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:2px;
+margin-left:300px;
+width: 240px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+
+}
+.score2{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-10px 0 0 2px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+
+}
+
+.champlogo{
+
+position: absolute;
+margin:-50px 0 0px 630px;
+
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+
+}
+
+
+.champnom{
+float:left;
+position: absolute;
+margin: -30px 0 0 750px;
+width: 250px;
+vertical-align:middle;
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+}
+
+/*description demi finale */
+
+.divisionDemi{
+color: #000000;
+background-color:#FF9933;
+border:2px solid #405864;
+border-radius:25px 8px 25px 8px;
+margin-left:20px;
+width:150px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+border:2px solid #405864;
+}
+
+
+
+.demi1{
+clear: both;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-left:50px;
+
+width: 210px;
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore1{
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-34px 0 0 2px;
+margin-left:265px;
+width: 35px;
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+.demi2{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:2px;
+margin-left:50px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore2{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-34px 0 0 265px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demi5{
+clear: both;
+
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:-33px;
+margin-left:350px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore5{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 566px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+.demiChamplogo{
+
+position: absolute;
+margin:-70px 0 0px 630px;
+
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+
+}
+
+
+.demiChampnom{
+
+position: absolute;
+margin: -40px 0 0 750px;
+width: 250px;
+vertical-align:middle;
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+}
+
+.demi6{
+
+position: absolute;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:10px;
+margin-left:350px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore6{
+
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:6px 0 0 566px;
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demi3{
+
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:0px;
+margin-left:50px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore3{
+
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 265px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demi6{
+float:left;
+position: absolute;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:-30px;
+margin-left:350px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore6{
+
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-30px 0 0 566px;
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demi4{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:14px;
+margin-left:50px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore4{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 265px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.ligneComite{
+text-align: center;
+background :#006699;
+Font-Weight: bold;
+font-family: Arial;
+font-size: 20px;
+color:#FFCC00;
+
+}
+
+.ligneComiteA{
+text-align: center;
+background :#006699;
+Font-Weight: bold;
+font-family: Arial;
+font-size: 12px;
+color:#FFFFFF;
+
+}
+
+.chevron
+{
+color: #EAECEB;
+font-size: 40px;
+text-align: center;
+Font-Weight: bold;
+}
+
+.chevron a
+{
+color: #FF0000;
+}
+
+.pub
+{
+text-align: center;
+width:375px;
+}
+
+/* demi Aller Retour   */
+
+
+.ptsGA{
+float:left;
+margin-left:255px;
+margin-top:-20px;
+color: #000000;
+font-size: 16px;
+
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+.demi1AR{
+clear: both;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-left:30px;
+
+width: 210px;
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore1AR{
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-34px 0 0 2px;
+margin-left:245px;
+width: 35px;
+
+font-size: 14px;
+color: #FFCC00;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore1AR2{
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-20px 0 0 2px;
+margin-left:285px;
+width: 30px;
+
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+
+.demi2AR{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:02px;
+margin-left:30px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore2AR{
+float:left;
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-34px 0 0 245px;
+
+width: 35px;
+font-size: 14px;
+color: #FFCC00;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore2AR2{
+
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-34px 0 0 285px;
+
+width: 30px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demi5{
+clear: both;
+
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:-33px;
+margin-left:350px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore5{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 566px;
+
+width: 35px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+.demiChamplogo{
+
+position: absolute;
+margin:-70px 0 0px 630px;
+
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+
+}
+
+
+.demiChampnom{
+
+position: absolute;
+margin: -40px 0 0 750px;
+width: 250px;
+vertical-align:middle;
+font-family: arial; 
+color: black;
+font-weight: Bold;
+text-align: center;
+font-size: 28px;
+}
+
+
+
+
+
+
+
+.demi3AR{
+
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:0px;
+margin-left:30px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+.demiScore3AR{
+
+position: relative;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 245px;
+
+width: 35px;
+
+font-size: 14px;
+color: #FFCC00;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore3AR2{
+
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:1px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-20px 0 0 285px;
+
+width: 30px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+
+.demi4AR{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin-top:3px;
+margin-left:30px;
+width: 210px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+
+.demiScore4AR{
+float:left;
+position: relative;
+
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 245px;
+
+width: 35px;
+font-size: 14px;
+color: #FFCC00;
+
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.demiScore4AR2{
+float:left;
+position: relative;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+margin:-35px 0 0 285px;
+
+width: 30px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+.ScoreA{
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+

@@ -1,0 +1,137 @@
+table{
+
+clear: both;
+border-spacing: 0;
+border-collapse: collapse;
+border: 0px ;
+
+
+}
+
+
+.qualifie { 
+background-color:green;
+border:2px #040BB3 solid;
+border-radius:0px 8px 0px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+width: 150px;
+box-shadow: -1px 1px 4px blue;
+ }
+ .qualifieGA { 
+background-color:green;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+width: 30px;
+box-shadow:-1px 1px 4px blue;
+ }
+
+
+.barrage { 
+background-color:#FFCC33;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+width: 150px;
+box-shadow: -1px 1px 4px blue;
+
+}
+
+
+
+.barrageGA {
+/*background-color:black; */
+background-color:#FFCC33;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+width: 30px;
+box-shadow: -1px 1px 4px blue;
+ }
+ 
+.quarts { 
+background-color:#405864;
+
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+box-shadow: -2px 2px 3px blue;
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: bold;
+width: 150px;
+ }
+ 
+.quartsHaut { 
+/*background-color:#405864;*/
+background-color:black;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+box-shadow: -2px 2px 3px blue;
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: bold;
+width: 150px;
+vertical-align: bottom;
+
+
+ }
+ 
+ .quartsBas { 
+/*background-color:#405864;*/
+background-color:black;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+box-shadow: -2px 2px 3px blue;
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: bold;
+width: 150px;
+vertical-align: bottom;
+
+ }
+ 
+.quartsGA { 
+
+
+background-color:#405864;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: bold;
+width: 30px;
+box-shadow: -3px 3px 4px blue;
+ }
+
+ 
+
+ 
+ 
+
+
+
+ 

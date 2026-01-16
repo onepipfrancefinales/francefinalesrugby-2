@@ -1,0 +1,113 @@
+<?php 
+$annee=$_GET['variable_1'];
+$comite=$_GET['comite'];
+$page=$_GET['page'];
+echo $page;
+echo $comite;
+echo $annee;
+//$table_pfannee="php".''.$comite.''."_pf".''.$annee;
+$table_pfterr="php".''.$comite.''."_pfterr";
+echo $table_pfterr;
+
+require ("../../connect/connection5.php") ; 
+$reponse = mysql_query("SELECT nom as nomcomplet
+						FROM comite
+						WHERE comite = '$comite'	");
+				while ($donnees = mysql_fetch_array($reponse))
+				{
+				$comiteNom=$donnees['nomcomplet'];
+				}
+				
+echo $comiteNom;
+mysql_close(); 
+?>
+
+<?php
+require ("../../connect/connection2.php") ; 
+if ($page=="HPHS1")
+	{
+	
+	$reponse = mysql_query("SELECT id as id
+							FROM phpbg_pfterr
+							WHERE div =200 and annee=2017 ");
+					while ($donnees = mysql_fetch_array($reponse))
+					{
+					$somme=$donnees['id'];
+					}
+	}
+elseif ($page=="S2S3S4")
+	{
+	
+	$reponse = mysql_query("SELECT sum(type) AS sommeS2S3S4
+							FROM phpbg_pfterr
+							WHERE div > 190 and div < 230 	");
+					while ($donnees = mysql_fetch_array($reponse))
+					{
+					$somme=$donnees['sommeS2S3S4'];
+					}
+	}
+elseif ($page=="RRPHR1")
+	{
+	
+	$reponse = mysql_query("SELECT sum(type) AS sommeRRPHR1
+							FROM phpbg_pfterr
+							WHERE div > 220 	");
+					while ($donnees = mysql_fetch_array($reponse))
+					{
+					$somme=$donnees['sommeRRPHR1'];
+					}
+	}
+			
+echo $somme;
+echo "fin";
+mysql_close();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Champions <?php echo $comiteNom; echo $annee;?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../champTerr.css">
+<meta name="description"
+content="tous les champions de france de rugby, ffr,FFR, presentation de tous les clubs de rugby francais, 
+Champions des differents comites territoriaux, Tous les championnats de rugby, federale 2, federale 3, federale 1, top 14.">
+<meta name="keywords"
+content="Brennus,Comite Midi Pyrenees de Rugby,ffr,FFR,Comite territoriaux de rugby,Stade toulousain,Bourgogne,FanceFinalesRugby,
+Rugby,championnat de france de rugby,Francaise,honneur,promotion honneur,Sport,Ballon,Ovale,">
+<meta name="classification" content="Sport,Rugby">
+<meta name="resource-type" content="document">
+<meta name="copyright" content="Comite Midi Pyrenees de Rugby">
+<meta name="author" content="Equipe Onepip">
+<meta name="robots" content="All">
+</head>
+
+<body>
+
+
+<?php    include("hautindex.php");  ?>
+<?php
+ 	if ($somme==3)
+	{
+	include("finale.php");
+//	echo "finale";
+	}
+elseif ($somme==6)
+	{
+	include ("demi.php");
+//	echo "demi";
+	}
+elseif ($somme==9)
+	{
+	include ("demiAR.php");
+//	echo "demiAR";
+	}
+else
+	{
+	include ("demiMixte2.php");
+//	echo "demiMixte2";
+	}
+?>
+
+	</body>
+</html> 

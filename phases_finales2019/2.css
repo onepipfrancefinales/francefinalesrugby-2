@@ -1,0 +1,320 @@
+.dates{
+text-align:center;
+color:#FF0000;
+}
+
+#champ{
+color: #FF0000;
+font-family: arial;
+font-weight: Bold;
+font-size: 26px;
+background-color:#FFFF00;
+text-align: center;
+border:2px #040BB3 solid;
+}
+
+
+a 
+{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+
+
+#droite {
+color: #FF0000;
+font-size: 16px;
+font-family: arial;
+text-align: right;
+font-weight: Bold;
+text-decoration: none;
+
+}
+
+.barrage { 
+background-color:#693D4C;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+
+ }
+ 
+.barragePts{ 
+width:10%;
+background-color:#E4EFFF;
+border:1px solid #9FC6FF;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+} 
+/*bleu ciel*/ 
+.barrageGA{ 
+width:10%;
+background-color:#693D4C;
+border:1px #E4EFFF solid;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+}  
+ 
+ #barrage2 { 
+background-color:#666633;
+border:2px #040BB3 solid;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 14px;
+color: #FFFFFF;
+text-align: center;
+font-weight: Bold;
+
+ }
+ 
+
+#gauche a {
+color: #FF0000;
+font-size: 16px;
+font-family: arial;
+text-align: left;
+font-weight: Bold;
+text-decoration: none;
+
+}
+
+h2{
+color: red;
+font-size: 14px;
+}
+
+#titre{
+
+color: #000000;
+font-size: 25px;
+font-family: arial;
+text-align: center;
+font-weight: Bold;
+
+}
+
+#champion{
+background-color:yellow;
+color: #ff0000;
+font-size: 25px;
+font-family: arial;
+text-align: center;
+font-weight: Bold;
+
+}
+.coin3{
+
+color: #000000;
+font-size: 15px;
+font-family: arial;
+text-align: center;
+font-weight: Bold;
+}
+/*---Entete --*/
+td.pts{
+width: 10%;
+text-align: center;	
+font-weight: Bold;
+font-family: arial; 
+font-size: 18px;
+color: #000000;
+}
+td.Ga{
+width: 15%;
+text-align: center;	
+font-weight: Bold;
+font-family: arial; 
+font-size: 18px;
+color: #000000;
+}
+/* equipes*/
+td.coin5{
+width:200px;	
+background-color:#9FC6FF;
+border:1px #E4EFFF solid;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+}
+
+td.coin4 { 
+width:200px;
+color: #000000;
+background-color:#E4EFFF;
+border:1px solid #9FC6FF;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 18px;
+text-align: center;
+font-weight: Bold;
+ }
+  
+/*****points terrain*****/
+/*bleu*/
+.coin4pts{ 
+width:10%;
+background-color:#E4EFFF;
+border:1px solid #9FC6FF;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+} 
+/*bleu ciel*/ 
+.coin5pts{ 
+width:10%;
+background-color:#9FC6FF;
+border:1px #E4EFFF solid;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+}  
+ 
+/******Goal average*******/
+/*bleu*/
+
+td.coin4GA{
+width:15%;
+background-color:#E4EFFF;
+border:1px solid #9FC6FF;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 18px;
+text-align: center;
+font-weight: Bold;
+}
+/*bleu ciel*/
+td.coin5GA{
+width:15%;	
+background-color:#9FC6FF;
+border:1px #E4EFFF solid;
+border-radius:10px 10px 10px 10px; 
+font-family: arial; 
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+ } 
+
+#equipeIpro{
+background-color:#0066CC;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+
+}
+
+#equipeIfed{
+background-color:#0091D7;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+
+}
+
+
+#equipeIterr{
+background-color:#04ADFF;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+
+}
+
+#equipeII{
+background-color:#00CC99;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+#equipeJ{
+background-color:#993399;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+#equipeENTR{
+background-color:#666666;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+#equipeFEM{
+background-color:#FF00FF;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+.cal{
+background-color:red;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 13px;
+text-align: center;
+font-weight: Bold;
+}
+
+#entete{
+background-color:black;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 16px;
+text-align: center;
+font-weight: Bold;
+}
+
+
+.AAA{
+    background-color: #9FC6FF;
+color: #3adf19;
+}

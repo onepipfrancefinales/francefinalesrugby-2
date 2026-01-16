@@ -1,0 +1,116 @@
+
+
+ a
+{
+text-decoration: none;
+color: #FFFFFF;
+}
+
+body{
+background-color:#EAECEB;
+}
+
+hr{
+margin-left:5px;
+width:1100px;
+
+}
+
+table>th{
+	
+background:	#ffffff;	
+color: white;
+font-size: 35px;	
+}
+
+/* mise en forme des page 
+	quarts demi AR
+	barrage 8me
+*/
+
+
+
+
+
+
+.bandeau2{
+	clear: both;
+background:	#FFCC66;
+border-radius: 8px 8px 8px 8px;
+border: 2px solid #000000;
+height: auto;
+width: 1000px;
+text-align: center;
+font-weight: Bold;
+}
+
+.affichageTitre{
+/*text-align: center;
+Font-Weight: bold;
+font-family: Arial;	
+border-radius:8px 8px 8px 8px;	
+*/	
+
+
+background-color:#040BB3;
+border:2px solid #405864;
+border-radius:8px 8px 8px 8px; 
+font-family: arial; 
+color: #FFFFFF;
+font-size: 14px;
+text-align: center;
+font-weight: Bold;
+
+	
+}
+
+
+
+.rang{
+clear: both;
+color: #FFFFFF;
+background :#405864;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 30px;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+
+
+.equipeQ{
+
+background :#00cc33;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #000000;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+width: 200px;
+
+}
+
+.equipeB{
+
+background :#FFcc33;
+border:2px solid #040BB3;
+border-radius:8px 8px 8px 8px;
+width: 35px;
+color: #000000;
+font-size: 14px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+width: 200px;
+}
+
+
+
+
+ 
