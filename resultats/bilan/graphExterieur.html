@@ -1,0 +1,107 @@
+  <?php
+//$victoireExterieur = 6; 
+//$nullExterieur = 1 ;
+//$defaiteExterieur = 2;
+?>
+ 
+<script type="text/javascript">
+var victoireExterieur=new Number ('<?php echo $victoireExterieur;?>');
+var nulExterieur=new Number ('<?php echo $nulExterieur;?>'); 
+var defaiteExterieur=new Number ('<?php echo $defaiteExterieur;?>'); 
+ 
+ alert(victoireExterieur);
+</script>
+
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data2 = google.visualization.arrayToDataTable2([
+          ['Task2', 'Hours per Day2'],
+          ['Victoire',0],
+          ['Defaite', defaiteExterieur],
+		  ['Null',nulExterieur],
+          ['Victoire', victoireExterieur]
+        ]);
+
+        var options2 = {
+           title: 'My Daily Activities' 
+       
+		};
+		var options2 = {legend: 'none'}; <!-- suppression des légendes -->
+        var chart2 = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart2.draw(data2, options2);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <div id="piechart2" style="width: 250px; height: 250px;"></div>
+	
+  </body>
+</html>
+
+ <?php
+//$victoireDomicile = 4; 
+//$nulDomicile = 2 ;
+//$defaiteDomicile = 2;
+?>
+ 
+<script type="text/javascript">
+var victoireDomicile=new Number ('<?php echo $victoireDomicile;?>');
+var nulDomicile=new Number ('<?php echo $nulDomicile;?>'); 
+var defaiteDomicile=new Number ('<?php echo $defaiteDomicile;?>'); 
+ 
+ alert(victoireDomicile);
+</script>
+
+
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Victoire',0],
+          ['Defaite', defaiteDomicile],
+		  ['Null',nulDomicile],
+          ['Victoire', victoireDomicile]
+        ]);
+
+        var options = {
+           title: 'My Daily Activities' 
+       
+		};
+		var options = {legend: 'none'}; <!-- suppression des légendes
+		-->
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <div id="piechart" style="width: 250px; height: 250px;"></div>
+	
+  
+
+  
+  
+  
+  </body>
+</html>

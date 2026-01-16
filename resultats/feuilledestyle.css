@@ -1,0 +1,122 @@
+
+
+
+
+.fondFem{
+border-style: solid;
+background-color: #FF9933;  
+border:3px;
+border-color:red;
+text-align:center;
+
+}
+
+
+body{    
+background-color: black;   
+}
+
+/*CHAMPIONNAT TERRITORIAUX*/
+
+h1{ 
+color: black;
+font-size: 32px;
+text-align:center;
+Font-weight:bold;
+}
+
+/*Comite*/
+
+h2 { 
+color: red;
+font-size: 28px;
+text-align:center;
+Font-weight:bold;
+}
+
+/*Equipe I et II*/
+h3{ 
+color: #000000;
+font-size: 18px;
+text-align:center;
+Font-weight:bold;
+}
+
+/*Phases finales & champ de France*/
+h4{ 
+font-family: Arial;
+color: red;
+font-size: 18px;
+text-align: center;
+Font-weight: bold;
+border-color:#006699;
+
+
+}
+
+h4 a 
+{
+color: #ffffff;
+text-decoration: none;
+}
+
+
+a
+{
+text-decoration: none;
+}
+
+/*Division*/
+h5{ 
+width: 580px;
+height: 25px;
+Font-weight:bold;
+background: #FF9933;
+color: #000000;
+font-size: 25px;
+border-style: solid;
+border-width:2px;
+border-color: #000000;
+text-align:center;
+}
+
+/*Plus d'infos & Calendrier*/
+h6{
+width: 205px;
+font-family: Arial;
+color: #009900;
+font-size: 16px;
+background: #e9e9e9;
+border-style: solid;
+border-width:2px;
+border-color: #003366;
+margin:1px;
+text-align: center;
+
+}
+h6 a
+{ 
+ color: #009900; 
+ text-decoration: none; 
+font-weight:bold; 
+} 
+
+h7
+{
+text-align: center;
+font-family: Arial;
+color: black;
+font-size: 16px;
+text-align: center;
+
+}
+
+#annonce{
+
+text-align: center;
+border:3px solid #405864;
+border-radius:20px 20px 20px 20px; 
+font-weight: Bold;
+background-color:#CC66FF;
+}
+

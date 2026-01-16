@@ -1,0 +1,527 @@
+<?php
+function nbrePerequations($bddComite, $valComite, $bdd)
+{	
+$phpmatchs="php".$bddComite."_matchs";
+global $nbrePerequations;
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+//echo "<br>";
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+//echo "<br>";
+
+if ($bddComite == "pro" or $bddComite == "fed3NE")
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin +1000000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+	
+	
+$requete = $bdd->query("SELECT COUNT(*)
+						FROM $phpmatchs
+						WHERE buts_dom is NULL 
+						AND buts_ext is NULL 
+						AND id_journee BETWEEN $valComiteMin AND $valComiteMax
+					
+						AND date_reelle = '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 
+						AND $phpmatchs.id_equipe_dom != 2029020 and $phpmatchs.id_equipe_dom != 2029092 and $phpmatchs.id_equipe_dom != 92029067 and $phpmatchs.id_equipe_dom != 92029170
+						AND $phpmatchs.id_equipe_ext != 2029020 and $phpmatchs.id_equipe_ext != 2029092 and $phpmatchs.id_equipe_ext != 92029067 and $phpmatchs.id_equipe_ext != 92029170
+						
+						
+						
+						
+
+						");
+
+$row = $requete->fetch();
+$nbrePerequations = $row[0];
+//echo "<br/>";
+//echo $nbrePerequations;
+//echo "<br/>";
+$nbrePerequations=$nbrePerequations;
+//$valComite=$valComite*10;
+//$nbrePerequations=$nbrePerequations.$valComite;
+
+//echo $valComite.' : '.$nbrePerequations;
+
+}
+
+function matchsPerequations($bddComite, $valComite, $bdd)
+{
+
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+echo "<br>";
+//global $nbreMatchs2;
+
+$phpmatchs="php".$bddComite."_matchs";
+$phpclubs ="php".$bddComite."_clubs";
+echo $phpmatchs;
+if ($bddComite == "pro" )
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+elseif	($bddComite == "fed3NE")
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	
+	
+	}
+	
+	
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin +1000000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+
+echo "<br>";
+
+
+$reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpmatchs.date_reelle
+						FROM $phpmatchs
+						INNER JOIN $phpclubs as clubsDom ON $phpmatchs.id_equipe_dom = clubsDom.id
+						INNER JOIN $phpclubs as clubsExt ON $phpmatchs.id_equipe_ext = clubsExt.id
+						
+						WHERE $phpmatchs.buts_dom is NULL 
+						AND $phpmatchs.buts_ext is NULL 
+						AND $phpmatchs.id_journee BETWEEN $valComiteMin AND $valComiteMax
+					
+						AND date_reelle = '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5 and $phpmatchs.id_equipe_dom != 2029020 and $phpmatchs.id_equipe_dom != 2029092
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 and $phpmatchs.id_equipe_ext != 2029020 and $phpmatchs.id_equipe_ext != 2029092
+						ORDER BY $phpmatchs.id_journee");
+			
+	while($row = $reponse->fetch())
+    { 
+		?>
+	 <table>
+	  <tr>
+		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
+		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
+		<td width="181" align="right" ><?php echo $row[1];?></td>
+		<td width="20" align="center"><?php echo " - " ;?></td>
+		<td width="181" ><?php echo $row[2];?></td>
+		<td width="181" ><?php echo $row[3];?></td>
+	  </tr>
+	 </table>
+	 <?php
+	}
+
+
+
+//nbreMatchs($bddComite, $valComite, $bdd);
+
+
+}
+
+
+//***************************************************************************
+
+
+function nbreMatchs($bddComite, $valComite, $bdd)
+{	
+$phpmatchs="php".$bddComite."_matchs";
+global $nbreMatchs;
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+//echo "<br>";
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+//echo "<br>";
+
+if ($bddComite == "pro" or $bddComite == "fed3NE")
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin +1000000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+	
+	
+$requete = $bdd->query("SELECT COUNT(*)
+						FROM $phpmatchs
+						WHERE buts_dom is NULL 
+						AND buts_ext is NULL 
+						AND id_journee BETWEEN $valComiteMin AND $valComiteMax
+						AND date_reelle < '$ma_date2'
+						AND date_reelle != '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 
+						AND $phpmatchs.id_equipe_dom != 2029020 and $phpmatchs.id_equipe_dom != 2029092 and $phpmatchs.id_equipe_dom != 92029067 and $phpmatchs.id_equipe_dom != 92029170
+						AND $phpmatchs.id_equipe_ext != 2029020 and $phpmatchs.id_equipe_ext != 2029092 and $phpmatchs.id_equipe_ext != 92029067 and $phpmatchs.id_equipe_ext != 92029170
+						
+						
+						
+						
+
+						");
+
+$row = $requete->fetch();
+$nbreMatchs = $row[0];
+$nbreMatchs2=$nbreMatchs;
+$valComite=$valComite*10;
+$nbreMatchs2=$nbreMatchs.$valComite;
+
+//echo $valComite.' : '.$nbreMatchs;
+
+}
+
+function nbreMatchsFem($bddComite, $valComite, $bdd)
+{
+	
+$phpmatchs="php".$bddComite."_matchs";
+global $nbreMatchs;
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+//echo "<br>";
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+//echo "<br>";
+
+if ($bddComite == "pro" or $bddComite == "fed3NE")
+	{
+	 $valComiteMin = 880*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin +1000000;
+	// echo $valComiteMin.' - '.$valComiteMax;
+	}
+	
+	
+$requete = $bdd->query("SELECT COUNT(*)
+						FROM $phpmatchs
+						WHERE buts_dom is NULL 
+						AND buts_ext is NULL 
+						AND id_journee BETWEEN $valComiteMin AND $valComiteMax
+						AND date_reelle < '$ma_date2'
+						AND date_reelle != '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 
+						And $phpmatchs.id_equipe_dom != 2029020 and $phpmatchs.id_equipe_dom != 2029092
+						and $phpmatchs.id_equipe_ext != 2029020 and $phpmatchs.id_equipe_ext != 2029092
+						
+						
+						
+						");
+
+$row = $requete->fetch();
+$nbreMatchs = $row[0];
+$nbreMatchs2=$nbreMatchs;
+$valComite=$valComite*10;
+$nbreMatchs2=$nbreMatchs.$valComite;
+
+//echo $valComite.' : '.$nbreMatchs;
+
+}
+
+
+function matchsEnRetards2($bddComite, $valComite, $bdd)
+{
+	
+
+	
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+echo "<br>";
+global $nbreMatchs2;
+//global $nbreMatchs.$valComite;
+
+$phpmatchs="php".$bddComite."_matchs";
+$phpclubs ="php".$bddComite."_clubs";
+echo $phpmatchs;
+if ($bddComite == "pro" )
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+elseif($bddComite == "fed3NE")	
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin + 1000000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+
+echo "<br>";
+
+
+$reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpmatchs.date_reelle
+						FROM $phpmatchs
+						INNER JOIN $phpclubs as clubsDom ON $phpmatchs.id_equipe_dom = ((clubsDom.id +  90000000))
+						INNER JOIN $phpclubs as clubsExt ON $phpmatchs.id_equipe_ext = ((clubsExt.id +  90000000))
+						
+						WHERE $phpmatchs.buts_dom + 90000000  is NULL 
+						AND $phpmatchs.buts_ext + 90000000 is NULL 
+						AND $phpmatchs.id_journee BETWEEN $valComiteMin AND $valComiteMax
+						AND $phpmatchs.date_reelle < '$ma_date2'
+						AND date_reelle != '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5 and $phpmatchs.id_equipe_dom != 92029067 and $phpmatchs.id_equipe_dom != 92029170
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 and $phpmatchs.id_equipe_ext != 92029067 and $phpmatchs.id_equipe_ext != 92029170
+						ORDER BY $phpmatchs.id_journee");
+			
+	while($row = $reponse->fetch())
+    { 
+		?>
+	 <table>
+	  <tr>
+		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
+		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
+		<td width="181" align="right" ><?php echo $row[1];?></td>
+		<td width="20" align="center"><?php echo " - " ;?></td>
+		<td width="181" ><?php echo $row[2];?></td>
+		<td width="181" ><?php echo $row[3];?></td>
+	  </tr>
+	 </table>
+	 <?php
+	}
+	echo "<br><br>";
+
+
+//nbreMatchs($bddComite, $valComite, $bdd);
+
+
+}
+
+
+
+function matchsEnRetards($bddComite, $valComite, $bdd)
+{
+	
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+echo "<br>";
+global $nbreMatchs2;
+
+$phpmatchs="php".$bddComite."_matchs";
+$phpclubs ="php".$bddComite."_clubs";
+echo $phpmatchs;
+if ($bddComite == "pro" )
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+elseif	($bddComite == "fed3NE")
+	{
+	 $valComiteMin = 990*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	
+	
+	}
+	
+	
+else
+	{
+	 $valComiteMin = $valComite*1000000;
+	 $valComiteMax = $valComiteMin +1000000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+
+echo "<br>";
+
+
+$reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpmatchs.date_reelle
+						FROM $phpmatchs
+						INNER JOIN $phpclubs as clubsDom ON $phpmatchs.id_equipe_dom = clubsDom.id
+						INNER JOIN $phpclubs as clubsExt ON $phpmatchs.id_equipe_ext = clubsExt.id
+						
+						WHERE $phpmatchs.buts_dom is NULL 
+						AND $phpmatchs.buts_ext is NULL 
+						AND $phpmatchs.id_journee BETWEEN $valComiteMin AND $valComiteMax
+						AND $phpmatchs.date_reelle < '$ma_date2'
+						AND date_reelle != '0000-00-00 00:00:00'
+						AND substr($phpmatchs.id_equipe_dom,-3,1) != 5 and $phpmatchs.id_equipe_dom != 2029020 and $phpmatchs.id_equipe_dom != 2029092
+						AND substr($phpmatchs.id_equipe_ext,-3,1) != 5 and $phpmatchs.id_equipe_ext != 2029020 and $phpmatchs.id_equipe_ext != 2029092
+						ORDER BY $phpmatchs.id_journee");
+			
+	while($row = $reponse->fetch())
+    { 
+		?>
+	 <table>
+	  <tr>
+		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
+		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
+		<td width="181" align="right" ><?php echo $row[1];?></td>
+		<td width="20" align="center"><?php echo " - " ;?></td>
+		<td width="181" ><?php echo $row[2];?></td>
+		<td width="181" ><?php echo $row[3];?></td>
+	  </tr>
+	 </table>
+	 <?php
+	}
+
+
+
+//nbreMatchs($bddComite, $valComite, $bdd);
+
+
+}
+
+
+function matchsEnRetardsFem($bddComite, $valComite, $bdd)
+{
+	
+$ma_date=date('Y-m-d H:i:s');  // 2012-10-11 15:35:53
+//echo date('l j F Y, H:i'); // Thursday 11 October 2012, 15:35
+//echo "<br>";
+//echo $ma_date;
+
+$ma_date2=substr($ma_date,0,10).' 23:00:00';
+//echo $ma_date2;
+echo "<br>";
+global $nbreMatchs2;
+//global $nbreMatchs.$valComite;
+
+$phpmatchs="php".$bddComite."_matchs";
+$phpclubs ="php".$bddComite."_clubs";
+echo $phpmatchs;
+if ($bddComite == "pro" )
+	{
+	 $valComiteMin = 880*100000 + $valComite*1000;
+	 $valComiteMax = $valComiteMin+1000;
+	 echo $valComiteMin.' - '.$valComiteMax;
+	}
+
+
+echo "<br>";
+
+$reponse= $bdd->query(" SELECT $phpmatchs.id, clubsDom.nom, clubsExt.nom,  $phpmatchs.date_reelle
+						FROM $phpmatchs
+						INNER JOIN $phpclubs as clubsDom ON $phpmatchs.id_equipe_dom = clubsDom.id
+						INNER JOIN $phpclubs as clubsExt ON $phpmatchs.id_equipe_ext = clubsExt.id
+						
+						WHERE $phpmatchs.buts_dom is NULL 
+						AND $phpmatchs.buts_ext is NULL 
+						AND $phpmatchs.id_journee BETWEEN $valComiteMin AND $valComiteMax
+						AND $phpmatchs.date_reelle < '$ma_date2'
+						AND date_reelle != '0000-00-00 00:00:00'
+						ORDER BY $phpmatchs.id_journee");
+			
+	while($row = $reponse->fetch())
+    { 
+		?>
+	 <table>
+	  <tr>
+		<td width="80" height="23"><?php echo substr($row[0],-10,-4);?></td>
+		<td width="80" ><?php echo "journee ".substr($row[0],-4,-2);?></td>
+		<td width="181" align="right" ><?php echo $row[1];?></td>
+		<td width="20" align="center"><?php echo " - " ;?></td>
+		<td width="181" ><?php echo $row[2];?></td>
+		<td width="181" ><?php echo $row[3];?></td>
+	  </tr>
+	 </table>
+	 <?php
+	}
+
+
+
+//nbreMatchs($bddComite, $valComite, $bdd);
+
+
+}
+
+
+function matchsAVenir($bddComite, $comite, $dateDeLaCompet, $bdd)
+{
+	
+$phpcomite_journees="php".$bddComite."_journees";
+$phpcomite_divisions ="php".$bddComite."_divisions";
+
+if ($bddComite == "pro" )
+	{		
+	 $comiteMin =990000 + $comite * 10;
+	 $comiteMax = $comiteMin + 10;
+	 echo '('.' '.$comiteMin.'-'.$comiteMax.')';
+	 echo "<br>";echo "<br>";
+	}
+	elseif ($bddComite == "fed3NE")
+	{
+	 $comiteMin =991000 + $comite * 10;
+	 $comiteMax = 992000 + $comite * 10 +100;
+	 echo '('.' '.$comiteMin.'-'.$comiteMax.')';
+	 echo "<br>";echo "<br>";
+	}
+	else
+	{
+	 $comiteMin = $comite * 10000;
+	 $comiteMax = $comiteMin + 10000;
+	 echo '('.' '.$comiteMin.'-'.$comiteMax.')';
+	 echo "<br>";
+	}
+//echo "<br>";
+//echo $comiteMin;echo "<br>";
+//echo $comiteMax;echo "<br>";
+//echo "<br>";
+
+$requete = $bdd->query("SELECT j.id_champ, d.nom, j.date_prevue, j.numero
+						FROM  $phpcomite_journees j
+						INNER JOIN $phpcomite_divisions d ON d.id=j.id_champ
+						WHERE j.numero > 0
+						AND j.id_champ BETWEEN $comiteMin AND $comiteMax
+						ORDER BY j.id");
+			
+    while($row = $requete->fetch())
+		{    	
+		$date = substr($row[2], 0,10);
+		//echo $date;
+			if ($date == $dateDeLaCompet )
+			{
+			 echo $comite.' '.$row[0].' '.$row[1].' '.$date.''." Journee ".''.$row[3]. "<br>";
+			}													
+		}
+	echo "<br>";	
+}
+
+?>

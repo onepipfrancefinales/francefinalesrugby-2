@@ -1,0 +1,70 @@
+
+/* Réglement */
+
+
+.reg_nomDivision{
+font-family: arial;
+    font-weight: Bold;
+    font-size: 20px;
+    text-align: center;
+    color: #ff0000;
+}
+
+.reg_titre {
+    font-family: arial;
+    font-weight: Bold;
+    font-size: 17px;
+    text-align: center;
+    color: #000000;
+    border: 1px black solid;
+    background-color: #FF9933;
+}
+
+
+.reg_sousTitre{
+font-family: arial;
+    font-weight: Bold;
+    font-size: 17px;
+}
+
+
+.reg_texte{
+font-family: arial;
+font-size: 15px;
+}
+
+
+/*    fin réglement  */
+
+.tab3{
+font-family: arial;
+font-weight: Bold;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: 1px black solid ;
+background-color:#FF9933;
+}
+
+.sommaire{
+width:500px;
+border: 1px black solid ;
+
+}
+
+a{
+color: #000000;
+text-decoration: none;
+}
+
+
+.tab33 {
+    font-family: arial;
+    font-weight: Bold;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    border: 1px black solid;
+    background-color: #FF9933;
+}
+

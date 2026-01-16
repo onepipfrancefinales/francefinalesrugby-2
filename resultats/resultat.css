@@ -1,0 +1,411 @@
+body {
+	background-color: black;
+}
+
+td.colonneDroiteGauche {
+	background-color: #006699;
+	width: 225px;
+	height: 1222px;
+	vertical-align: top;
+
+}
+
+td.colonneDroiteGaucheFem {
+	background-color: #996699;
+	width: 225px;
+	height: 1222px;
+	vertical-align: top;
+
+}
+
+table.infos {
+	width: "500";
+	margin: auto;
+}
+
+td.colonneCentrale {
+	background-color: #ffffff;
+	width: 650px;
+	height: 1222px;
+	vertical-align: top;
+	border-color: #000000;
+	padding-top:50px;
+
+}
+
+p.ressource {
+	color: #FF0000;
+	font-size: 16px;
+	text-align: center;
+	Font-weight: bold;
+}
+
+hr {
+	width: 500px;
+	color: blue;
+}
+
+/*CHAMPIONNAT TERRITORIAUX*/
+
+h1 {
+	color: #000000;
+	font-size: 32px;
+	text-align: center;
+	Font-weight: bold;
+}
+
+/*Comite*/
+
+h2.titre {
+	color: #FF0000;
+	font-size: 45px;
+	text-align: center;
+	Font-weight: bold;
+}
+
+h2.commentaire {
+	color: #000000;
+	font-size: 16px;
+	text-align: center;
+	Font-weight: bold;
+}
+
+/*Equipe I et II*/
+h3 {
+	color: #000000;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-style: solid;
+	border-width: 2px;
+	margin: 1px;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+	border-color: #000000;
+	width: 340px;
+	vertical-align : top;
+}
+
+
+/*Equipe I et II*/
+.h3 {
+	color: #000000;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-style: solid;
+	border-width: 2px;
+	margin: 1px;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+	border-color: #000000;
+	width: 400px;
+	vertical-align : top;
+}
+
+.test1 {
+	color: #000000;
+	font-size: 14px;
+	text-align: center;
+	Font-weight: bold;
+	border-style: solid;
+	border-width: 2px;
+	margin: 1px;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+	border-color: #000000;
+	width: 350px;
+}
+
+
+
+.bleuClair {
+	font-family: Arial;
+	text-align: center;
+	color: #000000;
+	background-color: #0099CC;
+	font-style: italic;
+	Font-weight: bold;
+	font-size: 16px;
+}
+
+.bleuClair a {
+	color: #000000;
+	text-decoration: none
+}
+
+/*Division*/
+h5 {
+
+	width: 600px;
+	height: 25px;
+	Font-weight: bold;
+	color: #000000;
+	font-size: 25px;
+	border: 2px solid #000000;
+	text-align: center;
+	background-image: linear-gradient(45deg, #ffcc33, #99cc66, #99cc66, #f3e481, #99cc66, #ffcc33);
+	border-radius: 20px;
+	margin: auto;
+	margin-top:25px;
+}
+
+/*Plus d'infos & Calendrier*/
+h6 {
+	width: 450px;
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #FF0000;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #003366;
+	margin: 1px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+h6 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h7 {
+	width: 580px;
+	height: 25px;
+	Font-weight: bold;
+	background: #FF9933;
+	color: #000000;
+	font-size: 25px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #000000;
+	text-align: center;
+}
+
+
+.fondFem {
+	border-style: solid;
+	background-color: #FF9933;
+	border: 3px;
+	border-color: red;
+	text-align: center;
+}
+
+/*liensDivers*/
+/*Phases finales & champ de France*/
+h4 {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-color: #000000;
+	background-color: red;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+h4 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+tr.fond {
+	background: #006699;
+}
+
+h4.perso {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-color: #000000;
+	background-color: red;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+	width: 350px
+}
+
+h4 a {
+	color: #FFFFFF;
+	text-decoration: none;
+	;
+}
+
+td.tabHautDroit {
+	font-family: arial;
+	font-weight: Bold;
+	font-size: 17px;
+	font-style: italic;
+	text-align: center;
+	border: 1px black solid;
+	background-color: #0099CC;
+	color: #000000;
+	border-color: #333333;
+	height: "25";
+}
+
+td.tabHautDroit a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/* sommaire */
+table.sommaire {
+	width: 500px;
+	border: 1px black solid;
+	margin: auto;
+}
+
+table.sommaireFed3 {
+	width: 600px;
+	border: 1px black solid;
+	text-align: center;
+	margin: auto;
+}
+
+td.tab3 {
+	font-family: arial;
+	font-weight: Bold;
+	font-size: 13px;
+	text-align: center;
+	border: 1px black solid;
+	background-color: #FF9933;
+}
+
+td.tab3 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.table {
+	text-align: center;
+	width: 1250px;
+	margin: auto;
+}
+
+#annonce {
+	text-align: center;
+	border: 3px solid #405864;
+	border-radius: 20px 20px 20px 20px;
+	font-weight: Bold;
+	background-color: #CC66FF;
+}
+
+
+
+
+
+
+/*
+
+Tableaux liens (H ph 1 2 3 4 )
+
+.tab3{font-family: arial;font-weight: Bold;font-size: 13px;text-align: center;color: #000000;border: 1px black solid ;
+background-color:#FF9933;}
+
+.tableau2{
+font-family: arial;font-family: arial;font-weight: Bold;font-size: 13px;text-align: center;
+color: #000000;border: 3px white double;background-color:#FF9933;}
+
+.tableau1{width:500px;font-family: arial;font-weight: Bold;font-size: 13px;color: #000000;text-align: center;
+border: 3px black solid;background-color:#FFffff;
+}
+
+.tableau4{font-family: arial;font-weight: Bold;font-size: 18px;text-align: center;color: #000000;
+			vertical-align: middle;background-color:#006699;border: 1px black solid;}
+
+.tableau4  a{color: #ffffff;}
+*/
+
+
+#annonce {
+	text-align: center;
+	border: 3px solid #405864;
+	border-radius: 20px 20px 20px 20px;
+	font-weight: Bold;
+	background-color: #CC66FF;
+}
+
+
+
+.sommaire {
+	width: 500px;
+	border: 1px black solid;
+}
+
+/*a{color: #000000;text-decoration: none;}*/
+
+.bulleReparGeo {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-color: #000000;
+	background-color: #FFCC66;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+.bulleReparGeo a {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+
+.bulleReglement {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-color: #000000;
+	background-color: yellow;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+.bulleReglement a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*forum*/
+td.forum {
+	color: #ff0000;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: center;
+	Font-weight: bold;
+	border-color: #000000;
+	background-color: #000000;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
+}
+
+td.forum a {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+tr.fond {
+	background: #006699;
+}
+
+.lienSommaireBas{
+padding-bottom:75px;
+}
+
+
+.lienSommaireHaut{
+	padding-top:50px;
+}
+
+

@@ -1,0 +1,84 @@
+/*titre*/
+h1
+{ 
+color: #000000;
+font-size: 25px;
+text-align:center;
+Font-weight:bold;
+font-family: Arial;
+background: #FFCC66;
+}
+/* sous titre*/
+h2 
+{ 
+color: #ffffff;
+font-size: 25px;
+Font-weight:bold;
+text-align:center;
+background: #ffffff;
+}
+h3
+{ 
+font-family: Arial;
+color: #000000;
+font-size: 17px;
+text-align:right;
+Font-weight:bold;
+}
+h4
+{ 
+font-family: Arial;
+color: #000000;
+font-size: 17px;
+text-align:left;
+Font-weight:bold;
+
+}
+h5 
+{
+color: red;
+Font-weight:bold;
+font-family: Arial;
+font-size: 15px;
+}
+
+h6
+{ 
+vertical-align:middle;
+color: green;
+Font-weight:bold;
+font-family: Arial;
+font-size: 15px;
+
+}
+
+h7
+{ 
+vertical-align:top;
+color: #000000;
+font-family: Arial;
+font-size: 15px;
+
+}
+h8
+{ 
+vertical-align:middle;
+color: red;
+Font-weight:bold;
+font-family: Arial;
+font-size: 15px;
+}
+#titre
+{ 
+font-family: Arial;
+color: black;
+font-size: 17px;
+Font-weight:bold;
+}
+#serie
+{ 
+font-family: Arial;
+color: black;
+font-size: 17px;
+Font-weight:bold;
+}

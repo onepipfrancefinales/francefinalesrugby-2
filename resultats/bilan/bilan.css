@@ -1,0 +1,92 @@
+
+
+.ligneBlanche{
+background-color: white;
+
+}
+
+.ligneGrise{
+background-color: #cccccc;
+
+}
+
+
+
+h1{ color: black; font-family: Arial;font-size: 32px;text-align:center; Font-weight:bold;}
+h2 { color: red; font-size: 30px;text-align:center;Font-weight:bold;}
+
+.saison{color: #000000; font-family: Arial; font-size: 15px;text-align:center; Font-weight: bold;width:17%}
+.division{color:black; font-family: Arial; font-size: 17px;text-align:center; width:83%}
+
+.td {height:20px; text-align:center; vertical-align: top;}
+
+
+/***   Zone stats  ***/
+.stats {
+     font-family:Arial; 
+     font-size: 13px; 
+     Font-weight: bold;
+     color: #000000;
+     background-color:#cccccc;
+     width:200px;}
+
+.statsBlanc {
+      font-family: Arial;
+     font-size: 13px;
+     Font-weight: bold;
+     color: #000000;
+     background-color: white;
+     width: 200px;
+          }
+
+/***   Zone moyennes  ***/
+
+.moyPP{ font-family:Arial; font-size: 17px; Font-weight: bold;color: #109618; }
+.moyPC{font-family:Arial; font-size: 17px; Font-weight: bold; color:#FF0000; }
+.moyVert{ font-family:Arial; font-size: 15px; Font-weight: bold;background-color: #109618; width:25%}
+.moyRouge{font-family:Arial; font-size: 15px; Font-weight: bold;background-color:red; width:25%}
+.moyResultat{font-family:Arial; font-size: 15px; Font-weight: bold; width:25%}
+
+/***   Zone infos  ***/
+
+.QLiens{ font-family:Arial; font-size: 17px; Font-weight: bold; }
+.NG{ font-weight:normal;}
+
+.palmares{font-family:Arial;
+     font-size: 17px; 
+     font-weight: normal;}
+
+.titreRouge1{
+     font-family: Arial;
+font-size: 23px;
+     color: #FF0000;
+     font-weight: bold;
+}
+
+.titreRouge2 {
+     font-family: Arial;
+     font-size: 15px;
+     color :#FF0000;
+     font-weight: bold;
+
+}
+
+.titreNoir1 {
+     font-family: Arial;
+     font-size: 25px;
+     color: #000000;
+     font-weight: bold;
+}
+
+.titreNoir2 {
+     font-family: Arial;
+     font-size: 18px;
+     color: #000000;
+     font-weight: bold;
+}
+.titreNoir3 {
+     font-family: Arial;
+     font-size: 12px;
+     color: #000000;
+     font-weight: bold;
+}

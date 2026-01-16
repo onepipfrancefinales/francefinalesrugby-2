@@ -1,0 +1,97 @@
+.tab3{
+
+font-family: arial;
+font-weight: Bold;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: 1px black solid ;
+background-color:#FF9933;
+color: #000000;
+
+}
+
+}
+
+.tableau2{
+font-family: arial;
+font-family: arial;
+font-weight: Bold;
+font-size: 13px;
+text-align: center;
+color: #000000;
+border: 3px white double;
+background-color:#FF9933;
+
+
+}
+
+.tab3 a{
+text-decoration: none;
+color: #000000;
+}
+
+
+.tableau{
+font-family: arial;
+font-family: arial;
+font-weight: Bold;
+font-size: 13px;
+color: #000000;
+text-align: center;
+border: 3px black solid;
+background-color:#FFffff;
+}
+
+.tableau4{
+font-family: arial;
+font-weight: Bold;
+font-size: 18px;
+text-align: center;
+color: #000000;
+vertical-align: middle;
+background-color:#006699;
+border: 1px black solid;
+}
+
+
+.tableau4  a{
+color: #ffffff;
+}
+
+
+h4{
+
+font-family: arial;
+font-weight: Bold;
+font-style: italic;
+font-size: 18px;
+text-align: center;
+background-color:red;
+border-radius: 10px;
+margin: 5px 5px 5px 5px;
+}
+
+h4f{
+
+font-family: arial;
+font-weight: Bold;
+font-style: italic;
+font-size: 18px;
+text-align: center;
+background-color:#0099cc;
+border-radius: 10px;
+margin: 5px 5px 5px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
