@@ -1,0 +1,17 @@
+----- dossier infoclub ----
+
+Déplacer dans le dossier consultation (modification en ligne des fiches clubs par les utilisateurs)
+
+-----dossier a supprimer ------
+
+ajouter_club
+consulter club
+consulter_clubs_comite
+consulter_palmares
+modifier
+modifier bdclubs
+
+----------fichier à supprimer----------
+
+admin.php
+

@@ -1,0 +1,65 @@
+body{
+
+background:#000000;
+vertical-align: auto;
+}
+
+td{
+text-align:center;
+}
+
+h4{ 
+font-family: Arial;
+color: black;
+font-size: 18px;
+text-align: center;
+Font-Weight: Normal;
+
+}
+/*palmarès pageannees */
+/*palmarès pagefinalesannees */
+
+
+#titre{
+border:4px solid red;
+border-radius:8px 8px 8px 8px;
+width: 550px;
+margin:auto;
+font-size: 30px;
+text-align: center;
+Font-Weight: bold;
+color:#000000;
+}
+
+#lienfinale{
+background :#FFFFFF;
+border:2px solid blue;
+border-radius:8px 8px 8px 8px;
+width: 400px;
+margin:auto;
+font-size: 16px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+color:ffffff;
+font-style:italic;
+}
+
+p.annee{
+background :#3aceed;
+border:4px solid blue;
+border-radius:8px 25px 8px 25px;
+margin:auto;
+width: 350px;
+font-size: 24px;
+text-align: center;
+Font-Weight: bold;
+font-family: Arial;
+}
+
+p.equipe{
+font-size: 18pxpx;
+text-align: center;
+font-family: Arial;
+color:#000000;
+}
